@@ -1,0 +1,916 @@
+#es-garnier.es-garnier {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 393px;
+  overflow: hidden;
+}
+#es-garnier.es-garnier * {
+  box-sizing: border-box;
+}
+#es-garnier.es-garnier h2,
+#es-garnier.es-garnier h3,
+#es-garnier.es-garnier h4,
+#es-garnier.es-garnier h5 {
+  font-family: "Montserrat", sans-serif;
+}
+#es-garnier.es-garnier .es-kv {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: 250px;
+  background-size: contain;
+  background-position: top 0 right 0;
+  background-repeat: no-repeat;
+}
+#es-garnier.es-garnier .es-kv__photo {
+  position: absolute;
+  z-index: 320;
+  top: -71px;
+  left: -13px;
+  width: 60%;
+  height: 100%;
+  -webkit-animation: sliderleft 1s ease forwards;
+          animation: sliderleft 1s ease forwards;
+}
+#es-garnier.es-garnier .es-kv__photo--1 {
+  position: relative;
+  z-index: 350;
+  top: 65px;
+  left: 248px;
+  width: 42%;
+  height: 100%;
+}
+#es-garnier.es-garnier .es-kv__photo--2 {
+  position: relative;
+  z-index: 800;
+  top: 122px;
+  left: -78px;
+  width: 100%;
+  -webkit-animation: pulse 1s ease-in-out forwards;
+          animation: pulse 1s ease-in-out forwards;
+}
+#es-garnier.es-garnier .es-kv__photoimg {
+  position: relative;
+  z-index: 0;
+  top: 29px;
+  left: -135px;
+  height: 149%;
+}
+#es-garnier.es-garnier .es-kv__logo {
+  position: absolute;
+  z-index: 400;
+  top: 0px;
+  right: 0;
+  width: 73%;
+  -webkit-animation: slideleft 1s ease forwards;
+          animation: slideleft 1s ease forwards;
+}
+#es-garnier.es-garnier .es-kv__packshot {
+  position: absolute;
+  z-index: 800;
+  right: 25px;
+  bottom: 78px;
+  width: 27%;
+}
+#es-garnier.es-garnier .es-kv__packshot--photo {
+  padding-top: 50px;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 410px;
+}
+#es-garnier.es-garnier .es-kv__img {
+  margin: 0 0 0 auto;
+  display: block;
+  max-width: 100%;
+  max-height: 100px;
+}
+#es-garnier.es-garnier .es-kv__name {
+  position: absolute;
+  z-index: 400;
+  top: 233px;
+  width: 50px;
+  padding-left: 10px;
+  color: #000000;
+  font-weight: 600;
+  font-size: 10px;
+}
+#es-garnier.es-garnier .es-benefits {
+  position: relative;
+  z-index: 700;
+  margin: 0;
+  width: 100%;
+  background-color: #f4ec94;
+  padding: 0;
+}
+#es-garnier.es-garnier .es-benefits__title {
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 32px;
+}
+#es-garnier.es-garnier .es-benefits__title--white {
+  margin-top: 26px;
+  background-color: #ea5818;
+  padding: 20px;
+  color: #ffffff;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-benefits__title--orange {
+  margin: 30px 0 0 0;
+  color: #ea5818;
+  font-size: 23px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-benefits__title--thin {
+  margin: 0;
+  color: #000000;
+  font-weight: 400;
+  font-size: 23px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-benefits__title--span {
+  color: #ffffff;
+}
+#es-garnier.es-garnier .es-benefits__title--black {
+  color: #000000;
+  font-weight: 500;
+}
+#es-garnier.es-garnier .es-benefits__wrapper {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: #ea5818;
+}
+#es-garnier.es-garnier .es-benefits__boxes {
+  margin: 20px auto;
+}
+#es-garnier.es-garnier .es-benefits__border {
+  margin: 20px 10px;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  padding: 15px 0;
+}
+#es-garnier.es-garnier .es-benefits__box {
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea5818;
+  padding: 10px;
+  color: #ffffff;
+  max-width: 340px;
+  gap: 20px;
+}
+#es-garnier.es-garnier .es-benefits__box--2 {
+  margin: 20px auto;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  background-image: url("../images/ba2.png");
+  background-size: 100%;
+  background-repeat: repeat;
+  max-width: 340px;
+  min-height: 85px;
+}
+#es-garnier.es-garnier .es-benefits__subbox {
+  padding-right: 10px;
+}
+#es-garnier.es-garnier .es-benefits__subbox--1 {
+  font-weight: 500;
+  font-size: 55px;
+}
+#es-garnier.es-garnier .es-benefits__subbox--2 {
+  text-transform: uppercase;
+}
+#es-garnier.es-garnier .es-benefits__img {
+  width: 32px;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  transition: all 0.3s;
+}
+#es-garnier.es-garnier .es-benefits__photo {
+  margin: 0 auto;
+  width: 140%;
+  display: block;
+  background-image: url("../images/ba-woman.png");
+  background-size: contain;
+  background-position: centopter;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  min-height: 385px;
+}
+#es-garnier.es-garnier .es-benefits__serum {
+  margin: 0 auto;
+  margin-top: -58px;
+  display: block;
+  background-image: url("../images/serum.png");
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: all 0.3s;
+  min-height: 492px;
+}
+#es-garnier.es-garnier .es-benefits__arrow {
+  position: absolute;
+  width: 38px;
+}
+#es-garnier.es-garnier .es-benefits__before {
+  position: relative;
+  top: 36px;
+  left: -116px;
+  width: 38px;
+  font-weight: 400;
+}
+#es-garnier.es-garnier .es-benefits__after {
+  position: relative;
+  top: 36px;
+  left: 125px;
+  width: 38px;
+  font-weight: 400;
+}
+#es-garnier.es-garnier .es-benefits__span {
+  color: #ea5818;
+  font-weight: 600;
+}
+#es-garnier.es-garnier .es-benefits .progress-bar {
+  margin: 10px auto;
+  margin-top: 25px;
+  border-radius: 3px;
+  height: 20px;
+  background-color: #ddd;
+  max-width: 300px;
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-benefits .progress {
+  height: 100%;
+  background: linear-gradient(90deg, #ea5818 0%, rgba(234, 88, 24, 0.52) 100%);
+}
+#es-garnier.es-garnier .es-benefits .progress--1 {
+  margin-bottom: 15px;
+  -webkit-animation: load1 2s ease-in-out forwards;
+          animation: load1 2s ease-in-out forwards;
+}
+#es-garnier.es-garnier .es-benefits .progress--2 {
+  margin-bottom: 15px;
+  -webkit-animation: load2 2s ease-in-out forwards;
+          animation: load2 2s ease-in-out forwards;
+}
+#es-garnier.es-garnier .es-benefits .progress--3 {
+  -webkit-animation: load3 2s ease-in-out forwards;
+          animation: load3 2s ease-in-out forwards;
+}
+#es-garnier.es-garnier .es-benefits__text {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  transition: all 0.3s;
+}
+#es-garnier.es-garnier .es-benefits__bold {
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-effects {
+  position: relative;
+  z-index: 800;
+  left: 0px;
+  margin-top: -100px;
+  width: 100%;
+  height: 655px;
+  padding-top: 40px;
+  text-align: center;
+  background: linear-gradient(180deg, #e7e8ed 0%, #e9e8de 52.9%, #f4ec94 100%);
+}
+#es-garnier.es-garnier .es-effects__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0 0 0;
+}
+#es-garnier.es-garnier .es-effects__icon {
+  width: 35px;
+}
+#es-garnier.es-garnier .es-effects__desc {
+  width: 86%;
+  font-weight: 500;
+  line-height: 1.4;
+}
+#es-garnier.es-garnier .es-effects__text {
+  position: relative;
+  z-index: 900;
+  margin: -27px auto 44px auto;
+  width: 100%;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-effects__span {
+  color: #ea5818;
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-ingrcol {
+  height: 642px;
+  background-color: #f4ec94;
+  background-image: radial-gradient(50% 50% at 50% 50%, #fcfcf8 0%, rgba(250, 248, 223, 0.506) 41.4%, rgba(248, 244, 198, 0) 100%);
+}
+#es-garnier.es-garnier .es-ingrcol__image {
+  position: relative;
+  top: 97px;
+  left: 43px;
+  margin: 0 auto;
+  width: 319px;
+}
+#es-garnier.es-garnier .es-ingrcol__title {
+  color: #ea5818;
+  font-weight: 500;
+  font-size: 20px;
+}
+#es-garnier.es-garnier .es-ingrcol__title--1 {
+  position: relative;
+  bottom: 421px;
+  left: 35px;
+  width: 120px;
+}
+#es-garnier.es-garnier .es-ingrcol__title--2 {
+  position: relative;
+  bottom: 452px;
+  left: 237px;
+  width: 142px;
+}
+#es-garnier.es-garnier .es-ingrcol__title--3 {
+  position: relative;
+  right: -78px;
+  bottom: 467px;
+  text-align: center;
+  max-width: 144px;
+}
+#es-garnier.es-garnier .es-ingrcol__title--4 {
+  position: relative;
+  top: -140px;
+  left: 48px;
+  width: 150px;
+}
+#es-garnier.es-garnier .es-ingrcol__line--1 {
+  position: relative;
+  z-index: 100;
+  top: -141px;
+  left: -275px;
+  width: 2px;
+  height: 170px;
+}
+#es-garnier.es-garnier .es-ingrcol__line--2 {
+  position: relative;
+  top: -247px;
+  left: -61px;
+  width: 2px;
+  height: 70px;
+}
+#es-garnier.es-garnier .es-ingrcol__line--3 {
+  position: relative;
+  z-index: 300;
+  top: -192px;
+  right: 235px;
+  width: 2px;
+  height: 74px;
+}
+#es-garnier.es-garnier .es-ingrcol__line--4 {
+  position: relative;
+  top: 2px;
+  left: 109px;
+  width: 120px;
+  height: 50px;
+}
+#es-garnier.es-garnier .es-ingrcol__text {
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-ingrcol__span {
+  color: #ea5818;
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-ba {
+  margin: 38px 0px 0 0;
+  height: 315px;
+  background-color: #f4ec94;
+  background-image: url("../images/women-serum.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#es-garnier.es-garnier .es-ingr {
+  border-top: 2px solid #ea5818;
+  border-bottom: 2px solid #ea5818;
+}
+#es-garnier.es-garnier .es-ingr__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+#es-garnier.es-garnier .es-ingr__title {
+  color: #ea5818;
+  font-weight: 700;
+  font-size: 17px;
+}
+#es-garnier.es-garnier .es-ingr__text {
+  margin-top: 0;
+  width: 309px;
+  color: #000000;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-ingr__content {
+  padding: 20px 40px;
+  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+#es-garnier.es-garnier .es-ingr__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#es-garnier.es-garnier .es-ingr__hide {
+  padding: 0 10px;
+  color: #ea5818;
+}
+#es-garnier.es-garnier .es-ingr--collapsed .es-ingr__content {
+  display: none;
+}
+#es-garnier.es-garnier .es-ingr__up {
+  position: relative;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}
+#es-garnier.es-garnier .es-ingr--collapsed, #es-garnier.es-garnier .es-ingr__up {
+  transform: rotate(0deg);
+}
+#es-garnier.es-garnier .es-htu {
+  margin: 0;
+  background-color: #f4ec94;
+}
+#es-garnier.es-garnier .es-htu__title {
+  margin-top: 0;
+  padding-top: 20px;
+  color: #ea5818;
+  font-weight: 700;
+  font-size: 23px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-htu__title--span {
+  color: #000000;
+}
+#es-garnier.es-garnier .es-htu__wrapper {
+  padding: 20px;
+  background-image: url("../images/woman-htu.png");
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 320px;
+}
+#es-garnier.es-garnier .es-htu__item {
+  width: 40%;
+}
+#es-garnier.es-garnier .es-htu__subitem {
+  display: flex;
+}
+#es-garnier.es-garnier .es-htu__number {
+  color: #ea5818;
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-htu__line {
+  position: relative;
+  z-index: 400;
+  top: 4px;
+  left: 6px;
+  width: 80%;
+  background-image: url("../images/line.png");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 4px;
+}
+#es-garnier.es-garnier .es-htu__text {
+  font-weight: 500;
+}
+#es-garnier.es-garnier .es-cross {
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 0 20px 0;
+  background: linear-gradient(180deg, #f4ec94 75%, rgb(244, 251, 251) 75%);
+}
+#es-garnier.es-garnier .es-cross__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 15px;
+}
+#es-garnier.es-garnier .es-cross__title {
+  padding: 20px;
+  color: black;
+  font-weight: 700;
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__title--span {
+  color: #ea5818;
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-cross__img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+#es-garnier.es-garnier .es-cross__circle {
+  position: absolute;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+#es-garnier.es-garnier .es-cross__circle--1 {
+  left: 14%;
+}
+#es-garnier.es-garnier .es-cross__circle--2 {
+  left: 34%;
+}
+#es-garnier.es-garnier .es-cross__circle--3 {
+  left: 48%;
+}
+#es-garnier.es-garnier .es-cross__circle--4 {
+  left: 61%;
+}
+#es-garnier.es-garnier .es-cross__circle--5 {
+  left: 71%;
+}
+#es-garnier.es-garnier .es-cross__circle--6 {
+  left: 83%;
+}
+#es-garnier.es-garnier .es-cross__product {
+  margin: -20px 2px;
+  background-color: #ffffff;
+  padding: 50px 0 30px 15px;
+  color: #ea5818;
+  font-weight: 700;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__button {
+  margin: 0 auto;
+  border: 0;
+  border-radius: 0;
+  width: 50%;
+  display: block;
+  padding: 15px 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background: #0e8144;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s;
+}
+#es-garnier.es-garnier .es-cross__button:hover {
+  border: 0;
+  padding: 15px 40px;
+  background: #f4fbfb;
+}
+#es-garnier.es-garnier .es-footer {
+  width: 100%;
+  background-color: #f4ec94;
+  padding: 20px 35px;
+  color: #000000;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 11px;
+  font-style: normal;
+  text-align: center;
+  line-height: 16px;
+  /* Black TXT */
+}
+#es-garnier.es-garnier .es-logo {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+#es-garnier.es-garnier .es-logo__img {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  min-width: 250px;
+  transition: 0.5s all;
+}
+#es-garnier.es-garnier .es-logo__img:hover {
+  transform: scale(1.1);
+}
+#es-garnier.es-garnier .es-logos {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 15px;
+  background-image: url("../images/bg-green.png");
+  background-size: cover;
+  gap: 30px;
+}
+#es-garnier.es-garnier .es-logos__img {
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  transition: 0.5s all;
+}
+#es-garnier.es-garnier .es-logos__img:hover {
+  transform: scale(1.1);
+}
+#es-garnier.es-garnier .es-logos__img--cruelty {
+  aspect-ratio: 231/52;
+}
+#es-garnier.es-garnier .es-logos__img--vegan {
+  aspect-ratio: 199/62;
+}
+@media screen and (max-width: 430px) {
+  #es-garnier.es-garnier .es-kv__photo--2 {
+    left: 0;
+  }
+  #es-garnier.es-garnier .es-benefits__before {
+    left: -85px;
+  }
+  #es-garnier.es-garnier .es-benefits__after {
+    left: 85px;
+  }
+  #es-garnier.es-garnier .es-benefits__photo {
+    min-height: 300px;
+  }
+  #es-garnier.es-garnier .es-benefits__serum {
+    min-height: 468px;
+  }
+  #es-garnier.es-garnier .progress-bar {
+    width: 234px;
+  }
+  #es-garnier.es-garnier .es-ba {
+    margin-top: 55px;
+  }
+  #es-garnier.es-garnier .es-ingr__text {
+    width: 100%;
+  }
+  #es-garnier.es-garnier .es-htu {
+    max-height: 300px;
+  }
+  #es-garnier.es-garnier .es-htu__wrapper {
+    background-image: none;
+  }
+  #es-garnier.es-garnier .es-htu__item {
+    min-width: 100%;
+  }
+  #es-garnier.es-garnier .es-htu__line {
+    width: 40%;
+  }
+  #es-garnier.es-garnier .es-ingrcol__image {
+    width: 266px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__title {
+    color: #ea5818;
+    font-weight: 500;
+    font-size: 20px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__title--1 {
+    position: relative;
+    bottom: 367px;
+    left: 35px;
+    width: 120px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__title--2 {
+    position: relative;
+    bottom: 395px;
+    left: 189px;
+    width: 142px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__title--3 {
+    position: relative;
+    right: -68px;
+    bottom: 403px;
+    text-align: center;
+    max-width: 144px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__title--4 {
+    position: relative;
+    top: -140px;
+    left: 48px;
+    width: 150px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__line--1 {
+    position: relative;
+    z-index: 100;
+    top: -109px;
+    left: -223px;
+    width: 2px;
+    height: 160px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__line--2 {
+    position: relative;
+    top: -185px;
+    left: -41px;
+    width: 2px;
+    height: 70px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__line--3 {
+    position: relative;
+    z-index: 300;
+    top: -117px;
+    right: 179px;
+    width: 2px;
+    height: 93px;
+  }
+  #es-garnier.es-garnier .es-ingrcol__line--4 {
+    position: relative;
+    top: 2px;
+    left: 68px;
+    width: 120px;
+    height: 50px;
+  }
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes pulse2 {
+  0% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slidedown {
+  from {
+    opacity: 0;
+    transform: translateY(-32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideright {
+  from {
+    opacity: 0.3;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideleft {
+  from {
+    opacity: 0.3;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes load1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@keyframes load1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+@-webkit-keyframes load2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 82%;
+  }
+}
+@keyframes load2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 82%;
+  }
+}
+@-webkit-keyframes load3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 98%;
+  }
+}
+@keyframes load3 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 98%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
