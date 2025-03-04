@@ -25,12 +25,13 @@ $orange: #ea5818;
     font-weight: 300;
     font-size: 16px;
     line-height: 1.2;
-    max-width: 393px;
+    max-width: 990px;
     overflow: hidden;
 
     * {
         box-sizing: border-box;
     }
+
     h2,
     h3,
     h4,
@@ -48,45 +49,14 @@ $orange: #ea5818;
         background-position: top 0 right 0;
         background-repeat: no-repeat;
 
-        &__photo {
-            position: absolute;
-            z-index: 320;
-            top: -71px;
-            left: -13px;
-            width: 60%;
-            height: 100%;
-            animation: sliderleft 1s ease forwards;
-
-            &--1 {
-                position: relative;
-                z-index: 350;
-                top: 65px;
-                left: 248px;
-                width: 42%;
-                height: 100%;
-            }
-
-            &--2 {
-                position: relative;
-                z-index: 800;
-                top: 122px;
-                left: -78px;
-                width: 100%;
-                animation: pulse 1s ease-in-out forwards;
-            }
-        }
-
         &__photoimg {
-            position: relative;
-            z-index: 0;
-            top: 29px;
-            left: -135px;
-            height: 149%;
+            width: 100%;
+            object-fit: cover;
         }
 
         &__logo {
             position: absolute;
-            z-index: 400;
+            z-index: 2;
             top: 0px;
             right: 0;
             width: 73%;
@@ -95,15 +65,16 @@ $orange: #ea5818;
 
         &__packshot {
             position: absolute;
-            z-index: 800;
-            right: 25px;
-            bottom: 78px;
+            z-index: 2;
             width: 27%;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
 
-            &--photo {
-                padding-top: 50px;
+            &-img {
                 @include img;
                 max-height: 410px;
+                animation: pulse 1s ease-in-out forwards;
             }
         }
 
@@ -116,8 +87,8 @@ $orange: #ea5818;
 
         &__name {
             position: absolute;
-            z-index: 400;
-            top: 233px;
+            z-index: 2;
+            bottom: 0;
             width: 50px;
             padding-left: 10px;
             color: #000000;
@@ -304,11 +275,9 @@ $orange: #ea5818;
 
         .progress {
             height: 100%;
-            background: linear-gradient(
-                90deg,
-                #ea5818 0%,
-                rgba(234, 88, 24, 0.52) 100%
-            );
+            background: linear-gradient(90deg,
+                    #ea5818 0%,
+                    rgba(234, 88, 24, 0.52) 100%);
         }
 
         .progress--1 {
@@ -346,12 +315,10 @@ $orange: #ea5818;
         height: 655px;
         padding-top: 40px;
         text-align: center;
-        background: linear-gradient(
-            180deg,
-            #e7e8ed 0%,
-            #e9e8de 52.9%,
-            #f4ec94 100%
-        );
+        background: linear-gradient(180deg,
+                #e7e8ed 0%,
+                #e9e8de 52.9%,
+                #f4ec94 100%);
 
         &__item {
             display: flex;
@@ -390,12 +357,10 @@ $orange: #ea5818;
     .es-ingrcol {
         height: 642px;
         background-color: #f4ec94;
-        background-image: radial-gradient(
-            50% 50% at 50% 50%,
-            #fcfcf8 0%,
-            rgba(250, 248, 223, 0.506) 41.4%,
-            rgba(248, 244, 198, 0) 100%
-        );
+        background-image: radial-gradient(50% 50% at 50% 50%,
+                #fcfcf8 0%,
+                rgba(250, 248, 223, 0.506) 41.4%,
+                rgba(248, 244, 198, 0) 100%);
 
         &__image {
             position: relative;
@@ -555,6 +520,7 @@ $orange: #ea5818;
             transform: rotate(180deg);
             transition: transform 0.3s ease-in-out;
         }
+
         &--collapsed,
 
         &__up {
@@ -563,11 +529,11 @@ $orange: #ea5818;
     }
 
     .es-htu {
-        margin:0;
+        margin: 0;
         background-color: #f4ec94;
 
         &__title {
-            margin-top:0;
+            margin-top: 0;
             padding-top: 20px;
             color: #ea5818;
             font-weight: 700;
@@ -614,7 +580,7 @@ $orange: #ea5818;
             min-height: 4px;
         }
 
-        &__text{
+        &__text {
             font-weight: 500;
         }
     }
@@ -623,11 +589,9 @@ $orange: #ea5818;
         margin: 0 auto;
         width: 100%;
         padding: 30px 0 20px 0;
-        background: linear-gradient(
-            180deg,
-            #f4ec94 75%,
-            rgba(244, 251, 251, 1) 75%
-        );
+        background: linear-gradient(180deg,
+                #f4ec94 75%,
+                rgba(244, 251, 251, 1) 75%);
 
         &__wrapper {
             position: relative;
@@ -731,282 +695,282 @@ $orange: #ea5818;
         text-align: center;
         line-height: 16px;
         /* Black TXT */
-}
-
-.es-logo {
-    margin: 0 auto;
-    width: 100%;
-    background-color: $white;
-
-    &__img {
-        width: 50%;
-        @include img;
-        min-width: 250px;
-        transition: 0.5s all;
-
-        &:hover {
-            transform: scale(1.1);
-        }
     }
-}
 
-.es-logos {
-    margin: 0 auto;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 30px 15px;
-    background-image: url("../images/bg-green.png");
-    background-size: cover;
-    gap: 30px;
+    .es-logo {
+        margin: 0 auto;
+        width: 100%;
+        background-color: $white;
 
-    &__img {
-        height: 100%;
-        @include img;
-        transition: 0.5s all;
+        &__img {
+            width: 50%;
+            @include img;
+            min-width: 250px;
+            transition: 0.5s all;
 
-        &:hover {
-            transform: scale(1.1);
-        }
-
-        &--cruelty {
-            aspect-ratio: 231/52;
-        }
-
-        &--vegan {
-            aspect-ratio: 199/62;
-        }
-    }
-}
-
-@media screen and (max-width: 430px) {
-    .es-kv {
-        &__photo {
-            &--2 {
-                left: 0;
+            &:hover {
+                transform: scale(1.1);
             }
         }
     }
 
-    .es-benefits {
-        &__before {
-            left: -85px;
-        }
+    .es-logos {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 15px;
+        background-image: url("../images/bg-green.png");
+        background-size: cover;
+        gap: 30px;
 
-        &__after {
-            left: 85px;
-        }
+        &__img {
+            height: 100%;
+            @include img;
+            transition: 0.5s all;
 
-        &__photo {
-            min-height: 300px;
-        }
-
-        &__serum {
-            min-height: 468px;
-        }
-    }
-
-    .progress-bar {
-        width: 234px;
-    }
-
-    .es-ba {
-        margin-top: 55px;
-    }
-
-    .es-ingr {
-        &__text {
-            width: 100%;
-        }
-    }
-
-    .es-htu {
-        max-height: 300px;
-
-        &__wrapper {
-            background-image: none;
-        }
-
-        &__item {
-            min-width: 100%;
-        }
-
-        &__line {
-            width: 40%;
-        }
-    }
-
-    .es-ingrcol {
-        &__image {
-            width: 266px;
-        }
-
-        &__title {
-            color: #ea5818;
-            font-weight: 500;
-            font-size: 20px;
-
-            &--1 {
-                position: relative;
-                bottom: 367px;
-                left: 35px;
-                width: 120px;
+            &:hover {
+                transform: scale(1.1);
             }
 
-            &--2 {
-                position: relative;
-                bottom: 395px;
-                left: 189px;
-                width: 142px;
+            &--cruelty {
+                aspect-ratio: 231/52;
             }
 
-            &--3 {
-                position: relative;
-                right: -68px;
-                bottom: 403px;
-                text-align: center;
-                max-width: 144px;
-            }
-
-            &--4 {
-                position: relative;
-                top: -140px;
-                left: 48px;
-                width: 150px;
-            }
-        }
-
-        &__line {
-            &--1 {
-                position: relative;
-                z-index: 100;
-                top: -109px;
-                left: -223px;
-                width: 2px;
-                height: 160px;
-            }
-
-            &--2 {
-                position: relative;
-                top: -185px;
-                left: -41px;
-                width: 2px;
-                height: 70px;
-            }
-
-            &--3 {
-                position: relative;
-                z-index: 300;
-                top: -117px;
-                right: 179px;
-                width: 2px;
-                height: 93px;
-            }
-
-            &--4 {
-                position: relative;
-                top: 2px;
-                left: 68px;
-                width: 120px;
-                height: 50px;
+            &--vegan {
+                aspect-ratio: 199/62;
             }
         }
     }
-}
+
+    @media screen and (max-width: 430px) {
+        .es-kv {
+            &__photo {
+                &--2 {
+                    left: 0;
+                }
+            }
+        }
+
+        .es-benefits {
+            &__before {
+                left: -85px;
+            }
+
+            &__after {
+                left: 85px;
+            }
+
+            &__photo {
+                min-height: 300px;
+            }
+
+            &__serum {
+                min-height: 468px;
+            }
+        }
+
+        .progress-bar {
+            width: 234px;
+        }
+
+        .es-ba {
+            margin-top: 55px;
+        }
+
+        .es-ingr {
+            &__text {
+                width: 100%;
+            }
+        }
+
+        .es-htu {
+            max-height: 300px;
+
+            &__wrapper {
+                background-image: none;
+            }
+
+            &__item {
+                min-width: 100%;
+            }
+
+            &__line {
+                width: 40%;
+            }
+        }
+
+        .es-ingrcol {
+            &__image {
+                width: 266px;
+            }
+
+            &__title {
+                color: #ea5818;
+                font-weight: 500;
+                font-size: 20px;
+
+                &--1 {
+                    position: relative;
+                    bottom: 367px;
+                    left: 35px;
+                    width: 120px;
+                }
+
+                &--2 {
+                    position: relative;
+                    bottom: 395px;
+                    left: 189px;
+                    width: 142px;
+                }
+
+                &--3 {
+                    position: relative;
+                    right: -68px;
+                    bottom: 403px;
+                    text-align: center;
+                    max-width: 144px;
+                }
+
+                &--4 {
+                    position: relative;
+                    top: -140px;
+                    left: 48px;
+                    width: 150px;
+                }
+            }
+
+            &__line {
+                &--1 {
+                    position: relative;
+                    z-index: 100;
+                    top: -109px;
+                    left: -223px;
+                    width: 2px;
+                    height: 160px;
+                }
+
+                &--2 {
+                    position: relative;
+                    top: -185px;
+                    left: -41px;
+                    width: 2px;
+                    height: 70px;
+                }
+
+                &--3 {
+                    position: relative;
+                    z-index: 300;
+                    top: -117px;
+                    right: 179px;
+                    width: 2px;
+                    height: 93px;
+                }
+
+                &--4 {
+                    position: relative;
+                    top: 2px;
+                    left: 68px;
+                    width: 120px;
+                    height: 50px;
+                }
+            }
+        }
+    }
 }
 
 @keyframes pulse {
-0% {
-    transform: scale(1);
-}
+    0% {
+        transform: scale(1);
+    }
 
-60% {
-    transform: scale(1.4);
-}
+    60% {
+        transform: scale(1.4);
+    }
 
-100% {
-    transform: scale(1);
-}
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes pulse2 {
-0% {
-    transform: scale(1);
-}
+    0% {
+        transform: scale(1);
+    }
 
-60% {
-    transform: scale(1.1);
-}
+    60% {
+        transform: scale(1.1);
+    }
 
-100% {
-    transform: scale(1);
-}
+    100% {
+        transform: scale(1);
+    }
 }
 
 @keyframes slidedown {
-from {
-    opacity: 0;
-    transform: translateY(-32px);
-}
+    from {
+        opacity: 0;
+        transform: translateY(-32px);
+    }
 
-to {
-    opacity: 1;
-    transform: translateY(0);
-}
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 @keyframes slideright {
-from {
-    opacity: 0.3;
-    transform: translateX(-100px);
-}
+    from {
+        opacity: 0.3;
+        transform: translateX(-100px);
+    }
 
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes slideleft {
-from {
-    opacity: 0.3;
-    transform: translateX(100px);
-}
+    from {
+        opacity: 0.3;
+        transform: translateX(100px);
+    }
 
-to {
-    opacity: 1;
-    transform: translateX(0);
-}
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 @keyframes load1 {
-from {
-    width: 0;
-}
+    from {
+        width: 0;
+    }
 
-to {
-    width: 70%;
-}
+    to {
+        width: 70%;
+    }
 }
 
 @keyframes load2 {
-from {
-    width: 0;
-}
+    from {
+        width: 0;
+    }
 
-to {
-    width: 82%;
-}
+    to {
+        width: 82%;
+    }
 }
 
 @keyframes load3 {
-from {
-    width: 0;
-}
+    from {
+        width: 0;
+    }
 
-to {
-    width: 98%;
-}
+    to {
+        width: 98%;
+    }
 }
