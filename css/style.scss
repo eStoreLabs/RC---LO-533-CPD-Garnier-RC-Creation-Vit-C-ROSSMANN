@@ -175,6 +175,7 @@ $turkus: #000;
         }
 
         &__border {
+            position: relative;
             margin: 20px 5%;
             border: 2px solid #000000;
             border-radius: 20px;
@@ -234,8 +235,17 @@ $turkus: #000;
           @include img;
           width: 100%;
         }
+        &__serumWrapper {
+          position: relative;
+        }
         &__serumimg {
           @include img;
+          &--desktop {
+            display: none;
+          }
+          &--mobile {
+            display: block;
+          }
         }
         &__serum {
           background: rgb(244,236,148);
@@ -342,18 +352,15 @@ $turkus: #000;
               }
             }
         }
-
         &__icon {
           transition: all 0.5s;
             width: 35px;
         }
-
         &__desc {
             width: 86%;
             font-weight: 500;
             line-height: 1.4;
         }
-
         &__text {
             position: relative;
             z-index: 900;
@@ -364,10 +371,22 @@ $turkus: #000;
             font-size: 25px;
             text-align: center;
         }
-
         &__span {
             color: #ea5818;
             font-weight: 700;
+        }
+        &__img {
+          @include img;
+          width: 100%;
+        }
+        &__container {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+        &__ba {
+          border-bottom: none;
+          border-left: none;
         }
     }
 
@@ -455,16 +474,6 @@ $turkus: #000;
         max-width: 70%;
         transition: all 0.3s;
       }
-
-    }
-
-    .es-ba {
-        margin: 0 0 0 0;
-        background-color: #f4ec94;
-        &__img {
-          @include img;
-          width: 100%;
-        }
 
     }
 
@@ -963,9 +972,38 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
       right: 3%;
       top: 10%;
     }
+    &__serumWrapper {
+      
+    }
+    &__border {
+      width: 60%;
+      margin: 0;
+      position: absolute;
+      top: 12%;
+      right: 5%;
+    }
+    .progress-bar {
+      margin: 10px auto;
+    }
+    &__serumimg {
+      @include img;
+      &--desktop {
+        display: block;
+      }
+      &--mobile {
+        display: none;
+      }
+    }
   }
   .es-effects {
-    margin-top: -75px;
+    margin-top: -68px;
+    &__container {
+      flex-wrap: nowrap;
+    }
+    &__ba {
+      border-bottom: 7px solid #ea5818;
+      border-left: 7px solid #ea5818;
+    }
   }
   .es-formula {
     &__item {
@@ -1003,9 +1041,13 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
 }
 @media screen and (min-width: 990px) {
   .es-effects {
-    margin-top: -120px;
+    margin-top: -83px;
   }
-  
+  .es-benefits {
+    &__border {
+      top: 18%;
+    }
+  }
 }
 
 
