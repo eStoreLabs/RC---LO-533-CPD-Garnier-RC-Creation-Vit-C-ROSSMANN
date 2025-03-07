@@ -397,6 +397,12 @@ $turkus: #000;
             #fcfcf8 0%,
             rgba(250, 248, 223, 0.506) 41.4%,
             rgba(248, 244, 198, 0) 100%);
+      &__container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
       &__wrapper {
         position: relative;
         &:hover {
@@ -480,7 +486,7 @@ $turkus: #000;
     .es-ingr {
         border-top: 2px solid #ea5818;
         border-bottom: 2px solid #ea5818;
-
+        display: block;
         &__menu {
             display: flex;
             flex-direction: row;
@@ -506,6 +512,9 @@ $turkus: #000;
         &__content {
             padding: 20px 40px;
             transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+            &--desktop {
+              display: none;
+            }
         }
 
         &__item {
@@ -548,11 +557,12 @@ $turkus: #000;
             padding-top: 20px;
             color: #ea5818;
             font-weight: 700;
-            font-size: 23px;
+            font-size: 27px;
             text-align: center;
 
             &--span {
                 color: #000000;
+                font-weight: 400;
             }
         }
 
@@ -600,7 +610,7 @@ $turkus: #000;
       margin: 0;
       padding-bottom: 32px;
       background: rgb(244,236,148);
-background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 65%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%);
+      background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 63%, rgba(255,255,255,1) 73%, rgba(255,255,255,1) 100%);
       &:hover {
         .es-slider__ampm {
           animation: pulse2 2s infinite;
@@ -639,28 +649,28 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
       &__img {
         @include img;    
         padding-top: 15px;  
+        max-height: 270px;
       }
       &__slide {
         width: 50%;
       }
       &__imgbut {
         margin: 0 auto;
-        height: 630px;
+        height: 420px;
         width: 220px;
-
         position: relative;
       }
 
       &__button {
-        width: 200px;
+        width: 180px;
         margin: 0 auto;
         border: 1px solid #0e8144;
         border-radius: 0;
         display: block;
-        padding: 15px 5px;
+        padding: 12px 3px;
         color: #fff;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
         text-align: center;
         background: #0e8144;
         text-decoration: none;
@@ -1006,9 +1016,13 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
     }
   }
   .es-formula {
+    &__container {
+      flex-wrap: nowrap;
+    }
     &__item {
+      font-size: 14px;
       &--1 {
-        left: 19%;
+        left: 14%;
       }
       &--3 {
         top: 7%;
@@ -1016,20 +1030,31 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
       }
       &--4 {
         top: 84%;
-        left: 18%;
+        left: 12%;
       }
     }
     &__line {
       &--1 {
-        height: 300px;
-        top: 30px;
+        height: 175px;
+        top: 25px;
         left: 15px;
       }
+      &--2 {
+        top: 40px;
+      }
       &--4 {
-        width: 160px;
-        height: 80px;
-        top: -80px;
-        left: 86px;
+        width: 100px;
+        height: 60px;
+        top: -70px;
+        left: 46px;
+      }
+    }
+  }
+  .es-ingr {
+    display: none;
+    &__content {
+      &--desktop {
+        display: block;
       }
     }
   }
@@ -1039,6 +1064,23 @@ background: linear-gradient(180deg, rgba(244,236,148,1) 0%, rgba(244,236,148,1) 
     }
   }
 }
+
+@media screen and (min-width: 900px) {
+  .es-formula {
+    &__item {
+      &--4 {
+        left: 18%;
+      }
+    }
+    &__line {
+      &--1 {
+        height: 215px;
+      }
+    }
+  }
+}
+
+
 @media screen and (min-width: 990px) {
   .es-effects {
     margin-top: -83px;

@@ -141,25 +141,56 @@
     <div class="es-formula">
       <p class="es-formula__title">Składniki aktywne<br>
         <span class="es-formula__span">w serum na przebarwienia</span></p>
-      <div class="es-formula__wrapper">
-        <img src="./images/ingr.png" alt="" class="es-formula__img">
-        <div class="es-formula__item es-formula__item--1">
-          MELASYL™
-          <img src="./images/line-1.png" alt="" class="es-formula__line es-formula__line--1">
+      <div class="es-formula__container">
+        <div class="es-formula__wrapper">
+          <img src="./images/ingr.png" alt="" class="es-formula__img">
+          <div class="es-formula__item es-formula__item--1">
+            MELASYL™
+            <img src="./images/line-1.png" alt="" class="es-formula__line es-formula__line--1">
+          </div>
+          <div class="es-formula__item es-formula__item--2">
+            KWAS<br>SALICYLOWY
+            <img src="./images/line-2.png" alt="" class="es-formula__line es-formula__line--2">
+          </div>
+          <div class="es-formula__item es-formula__item--3">
+            NIACYNAMID
+            <img src="./images/line-3.png" alt="" class="es-formula__line es-formula__line--3">
+          </div>
+          <div class="es-formula__item es-formula__item--4">
+            WITAMINA C*
+            <img src="./images/line-4.png" alt="" class="es-formula__line es-formula__line--4">
+          </div>
         </div>
-        <div class="es-formula__item es-formula__item--2">
-          KWAS<br>SALICYLOWY
-          <img src="./images/line-2.png" alt="" class="es-formula__line es-formula__line--2">
-        </div>
-        <div class="es-formula__item es-formula__item--3">
-          NIACYNAMID
-          <img src="./images/line-3.png" alt="" class="es-formula__line es-formula__line--3">
-        </div>
-        <div class="es-formula__item es-formula__item--4">
-          WITAMINA C*
-          <img src="./images/line-4.png" alt="" class="es-formula__line es-formula__line--4">
+        <div class="es-ingr__content es-ingr__content--desktop">
+          <div class="es-ingr__item">
+            <p class="es-ingr__title">MELASYL™</p>
+            <p class="es-ingr__text">
+              Nowa opatentowana substancja aktywna, która redukuje nadmiar
+              melaniny powodującej przebarwienia. Nadaje formule żółty odcień,
+              który nie przenosi się na skórę.
+            </p>
+          </div>
+          <div class="es-ingr__item">
+            <p class="es-ingr__title">WITAMINA C*</p>
+            <p class="es-ingr__text">
+              Pozyskiwany biotechnologicznie, silny antyoksydant, który
+              rozświetla skórę.
+            </p>
+          </div>
+          <div class="es-ingr__item">
+            <p class="es-ingr__title">NIACYNAMID</p>
+            <p class="es-ingr__text">
+              Kojący składnik aktywny, który wyrównuje koloryt skóry.
+            </p>
+          </div>
+          <div class="es-ingr__item">
+            <p class="es-ingr__title">KWAS SALICYLOWY</p>
+            <p class="es-ingr__text">Delikatnie złuszcza i wygładza skórę.</p>
+          </div>
         </div>
       </div>
+
+
     </div>
     <div class="es-ingr">
       <div class="es-ingr__menu">
@@ -327,7 +358,7 @@
   <script src="./js/script.js"></script>
   <script src="./js/slider.js"></script>
   <script>
-    const swiper = new Swiper('.es-swiper', {
+    const swiper = new Swiper('#es-garnier .es-swiper', {
       loop: true,
       slidesPerView: "auto",
       spaceBetween: 30,
