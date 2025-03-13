@@ -295,20 +295,24 @@
   font-weight: 700;
 }
 #es-garnier.es-garnier .es-effects {
-  position: relative;
-  z-index: 800;
-  left: 0px;
-  margin-top: -40px;
-  width: 100%;
-  padding-top: 0;
   text-align: center;
-  background: linear-gradient(180deg, #e7e8ed 0%, #e9e8de 52.9%, #f4ec94 100%);
+}
+#es-garnier.es-garnier .es-effects .es-section-title {
+  margin-top: 0;
+}
+#es-garnier.es-garnier .es-effects .es-section-title--highlight {
+  display: block;
+}
+#es-garnier.es-garnier .es-effects__desktop-bg {
+  display: none;
+}
+#es-garnier.es-garnier .es-effects__container {
+  background-color: #f4ec9b;
 }
 #es-garnier.es-garnier .es-effects__wrapper {
   padding-top: 20px;
 }
 #es-garnier.es-garnier .es-effects__item {
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -822,8 +826,15 @@
     padding: 5px 15px;
     font-size: 14px;
   }
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -50px;
+  #es-garnier.es-garnier .es-effects__wrapper {
+    max-width: 60%;
+    margin: auto;
+  }
+  #es-garnier.es-garnier .es-effects__item {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
   }
   #es-garnier.es-garnier .es-formula__item {
     font-size: 20px;
@@ -983,15 +994,26 @@
     max-width: 30%;
     z-index: 1;
   }
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -68px;
-  }
   #es-garnier.es-garnier .es-effects__container {
-    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 2.66;
+  }
+  #es-garnier.es-garnier .es-effects__wrapper {
+    margin-left: 8%;
+    max-width: 55%;
   }
   #es-garnier.es-garnier .es-effects__ba {
-    border-bottom: 7px solid #e95817;
-    border-left: 7px solid #e95817;
+    display: none;
+  }
+  #es-garnier.es-garnier .es-effects__desktop-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
   }
   #es-garnier.es-garnier .es-formula__container {
     flex-wrap: nowrap;
@@ -1053,9 +1075,6 @@
   }
 }
 @media screen and (min-width: 990px) {
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -83px;
-  }
   #es-garnier.es-garnier .es-benefits__border {
     top: 18%;
   }

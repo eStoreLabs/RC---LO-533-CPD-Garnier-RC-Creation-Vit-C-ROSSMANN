@@ -1,6 +1,7 @@
 @charset "UTF-8";
 $es-montserrat: "Montserrat", sans-serif;
 $es-white: #ffffff;
+$es-yellow-light: #f4ec9b;
 $es-bgcolor: #f4fbfb;
 $es-orange: #e95817;
 $es-black: #000;
@@ -355,24 +356,31 @@ $es-black: #000;
   }
 
   .es-effects {
-    position: relative;
-    z-index: 800;
-    left: 0px;
-    margin-top: -40px;
-    width: 100%;
-    padding-top: 0;
     text-align: center;
-    background: linear-gradient(180deg,
-        #e7e8ed 0%,
-        #e9e8de 52.9%,
-        #f4ec94 100%);
+
+
+    .es-section-title {
+      margin-top: 0;
+    }
+
+    .es-section-title--highlight {
+      display: block;
+    }
+
+    &__desktop-bg {
+      display: none;
+    }
+
+    &__container {
+      background-color: $es-yellow-light;
+    }
 
     &__wrapper {
       padding-top: 20px;
+
     }
 
     &__item {
-      min-width: 200px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -990,7 +998,19 @@ $es-black: #000;
     }
 
     .es-effects {
-      margin-top: -50px;
+
+      &__wrapper {
+        max-width: 60%;
+        margin: auto;
+      }
+
+      &__item {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+      }
+
     }
 
     .es-formula {
@@ -1193,15 +1213,30 @@ $es-black: #000;
     }
 
     .es-effects {
-      margin-top: -68px;
 
       &__container {
-        flex-wrap: nowrap;
+        position: relative;
+        z-index: 1;
+        aspect-ratio: 2.66;
+      }
+
+      &__wrapper {
+        margin-left: 8%;
+        max-width: 55%;
       }
 
       &__ba {
-        border-bottom: 7px solid $es-orange;
-        border-left: 7px solid $es-orange;
+        display: none;
+      }
+
+      &__desktop-bg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
       }
     }
 
@@ -1297,9 +1332,6 @@ $es-black: #000;
   }
 
   @media screen and (min-width: 990px) {
-    .es-effects {
-      margin-top: -83px;
-    }
 
     .es-benefits {
       &__border {
