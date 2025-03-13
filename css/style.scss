@@ -38,6 +38,12 @@ $es-black: #000;
     margin-block: 0;
   }
 
+  img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+  }
+
   .es-section-title {
     font-weight: 700;
     font-size: 24px;
@@ -47,7 +53,6 @@ $es-black: #000;
 
     &--highlight {
       color: $es-orange;
-      font-size: 24px;
     }
 
     @media (min-width: 768px) {
@@ -140,6 +145,10 @@ $es-black: #000;
     width: 100%;
     padding: 0;
 
+    &__desktop {
+      display: none;
+    }
+
     .es-section-title {
       font-size: 18px;
 
@@ -159,7 +168,7 @@ $es-black: #000;
 
     &__container {
       background-color: #f4ec94;
-      padding-block: 16px;
+      padding-top: 16px;
     }
 
     &__wrapper {
@@ -227,7 +236,6 @@ $es-black: #000;
         border-radius: 25px;
         display: flex;
         justify-content: center;
-        background-image: url("../images/ba2.png");
         background-size: 100%;
         background-repeat: repeat;
         max-width: 340px;
@@ -1083,8 +1091,102 @@ $es-black: #000;
       &__mobile {
         display: none;
       }
+
+      &__container {
+        background: -moz-linear-gradient(140deg, rgba(239, 233, 166, 1) 0%, rgba(255, 240, 4, 1) 100%);
+        background: -webkit-linear-gradient(140deg, rgba(239, 233, 166, 1) 0%, rgba(255, 240, 4, 1) 100%);
+        background: linear-gradient(140deg, rgba(239, 233, 166, 1) 0%, rgba(255, 240, 4, 1) 100%);
+      }
+
       &__desktop {
         display: block;
+        position: relative;
+
+        &-title-wrapper {
+          background-color: $es-white;
+          max-width: max-content;
+          padding: 8px 16px;
+          border-radius: 8px;
+          margin: auto;
+        }
+
+        &-BA-wrapper {
+          position: absolute;
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 55%;
+          width: max-content;
+          color: $es-white;
+          text-transform: uppercase;
+          font-weight: 600;
+          border-radius: 16px;
+          overflow: hidden;
+          border: 2px solid $es-white;
+          z-index: 1;
+        }
+
+        &-BA-top {
+          background-color: #c4c248bf;
+
+          &--1 {
+            border: 2px solid $es-white;
+            border-top: none;
+            border-left: none;
+            border-radius: 16px 0 16px 0;
+            max-width: max-content;
+            padding: 8px 16px;
+          }
+
+          &--2 {
+            padding: 8px 16px;
+            border-bottom: 2px solid $es-white;
+          }
+
+          &--span {
+            font-size: 24px;
+          }
+        }
+
+        &-BA-arrow-container {
+          position: relative;
+          height: 100px;
+        }
+
+        &-BA-arrow {
+          position: absolute;
+          height: 100px;
+          transform: translate(-50%, -50%);
+          left: 50%;
+          top: 50%;
+        }
+
+        &-BA-text-container {
+          display: flex;
+          padding: 8px 16px;
+          align-items: flex-end;
+          justify-content: space-between;
+          height: 100px;
+        }
+
+        &-images-wrapper {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          position: relative;
+
+        }
+
+        &-images--left {
+          flex: 1 1 0;
+          max-width: 50%;
+          z-index: 0;
+        }
+
+        &-images--right {
+          flex: 1 1 0;
+          max-width: 30%;
+          z-index: 1;
+        }
       }
     }
 
@@ -1162,6 +1264,21 @@ $es-black: #000;
   }
 
   @media screen and (min-width: 900px) {
+    .es-benefits__desktop {
+      &-title-wrapper {
+        position: absolute;
+        transform: translate(-50%);
+        left: 50%;
+        top: 24px;
+      }
+
+      &-BA-wrapper {
+        top: 55%;
+        left: 58%;
+      }
+
+    }
+
     .es-formula {
       &__item {
         &--4 {
