@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Garnier</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/swiper.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -14,14 +15,14 @@
 <body>
   <div class="es-garnier" id="es-garnier">
     <div class="es-kv">
-      <h2 class="es-kv__title">
+      <p class="es-kv__title">
         Sylwia<br>Butor
-      </h2>
+      </p>
       <div class="es-kv__photo">
-        <img src="./images/kv-photo.png" alt="" class="es-kv__photoimg" >
+        <img src="./images/kv-photo.png" alt="" class="es-kv__photoimg">
       </div>
       <div class="es-kv__logo">
-        <img src="./images/Logo-Garnier-small.png" alt="" class="es-kv__img" >
+        <img src="./images/Logo-Garnier-small.png" alt="" class="es-kv__img">
       </div>
       <div class="es-kv__packshot">
         <img src="./images/packshot-d.png" alt="" class="es-kv__packshot--photo">
@@ -30,79 +31,100 @@
         <img src="./images/ingr.png" alt="" class="es-kv__ingredient--photo">
       </div>
     </div>
+
     <div class="es-benefits">
-      <h3 class="es-benefits__title--white">
-        <span class="es-benefits__title--span">
-          NOWA, ULEPSZONA FORMUŁA. </span><br>
-        Promienna skóra<br>
-        i&nbsp;mniej przebarwień w&nbsp;3&nbsp;dni<sup>1</sup>
-      </h3>
-      <div class="es-benefits__wrapper">
-        <h3 class="es-benefits__title--orange">
-          Serum numer 1 w&nbsp;Polsce<sup>2</sup>
-        </h3>
-        <h3 class="es-benefits__title--thin">
-          Teraz jeszcze skuteczniejsze!
-        </h3>
-      </div>
-      <div class="es-benefits__boxes">
-        <div class="es-benefits__boxWrapper">
-          <div class="es-benefits__box">
-            <div class="es-benefits__subbox--1">70%</div>
-            <div class="es-benefits__subbox--2">
-              mniej widocznych przebarwień<sup>1</sup>
+
+      <p class="es-section-title">
+        <span class="es-section-title--highlight">NOWA, ULEPSZONA FORMUŁA!</span>
+        Promienna skóra i&nbsp;mniej przebarwień w 3 dni<sup>1</sup>
+      </p>
+
+
+      <div class="es-benefits__container">
+
+        <div class="es-benefits__mobile">
+          <div class="es-benefits__wrapper">
+            <p class="es-benefits__title--orange">
+              Serum numer 1 w&nbsp;Polsce<sup>2</sup>
+            </p>
+            <p class="es-benefits__title--black">
+              Teraz jeszcze skuteczniejsze!
+            </p>
+          </div>
+
+          <div class="es-benefits__boxes">
+            <div class="es-benefits__boxWrapper">
+              <div class="es-benefits__box">
+                <div class="es-benefits__subbox--1">70%</div>
+                <div class="es-benefits__subbox--2">
+                  mniej widocznych przebarwień<sup>1</sup>
+                </div>
+              </div>
+              <div class="es-benefits__box--2">
+                <img src="./images/arrow.png" alt="" class="es-benefits__arrow">
+                <p class="es-benefits__before">PRZED</p>
+                <p class="es-benefits__after">PO<sup>3</sup></p>
+              </div>
+            </div>
+            <div class="es-benefits__photo">
+              <img src="./images/ba-woman.png" alt="" class="es-benefits__photoimg">
             </div>
           </div>
-          <div class="es-benefits__box--2">
-            <img src="./images/arrow.png" alt="" class="es-benefits__arrow">
-            <p class="es-benefits__before">PRZED</p>
-            <p class="es-benefits__after">PO<sup>3</sup></p>
+        </div>
+
+        <div class="es-benefits__desktop">
+          <div class="es-benefits__wrapper">
+            <p class="es-benefits__title--orange">
+              Serum numer 1 w&nbsp;Polsce<sup>2</sup>
+            </p>
           </div>
         </div>
-        <div class="es-benefits__photo">
-          <img src="./images/ba-woman.png" alt="" class="es-benefits__photoimg">
+
+        <p class="es-benefits__title--orange">
+          Potwierdzona
+          <span class="es-benefits__title--black">skuteczność</span>
+        </p>
+
+        <div class="es-benefits__serumWrapper">
+          <div class="es-benefits__border">
+            <div class="progress-bar">
+              <div class="progress progress--1"></div>
+            </div>
+            <div class="es-benefits__text">
+              Redukcja
+              <span class="es-benefits__span">70%</span> przebarwień<br>
+              po&nbsp;8 tygodniach<sup>1</sup>
+            </div>
+            <div class="progress-bar">
+              <div class="progress progress--2"></div>
+            </div>
+            <div class="es-benefits__text">
+              Widoczne rozświetlenie skóry<br>
+              po 3&nbsp;dniach<sup>1</sup>
+            </div>
+            <div class="progress-bar">
+              <div class="progress progress--3"></div>
+            </div>
+            <div class="es-benefits__text">
+              <span class="es-benefits__span">98%</span> zauważyło wyrównany<br>
+              koloryt skóry<sup>4</sup>
+            </div>
+          </div>
+          <div class="es-benefits__serum">
+            <img src="./images/serumdesktop.png" alt="" class="es-benefits__serumimg es-benefits__serumimg--desktop">
+            <img src="./images/serum.png" alt="" class="es-benefits__serumimg es-benefits__serumimg--mobile">
+          </div>
         </div>
+
       </div>
-      <h3 class="es-benefits__title--orange">
-        Potwierdzona
-        <span class="es-benefits__title--black">skuteczność</span>
-      </h3>
-      <div class="es-benefits__serumWrapper">
-        <div class="es-benefits__border">
-          <div class="progress-bar">
-            <div class="progress progress--1"></div>
-          </div>
-          <div class="es-benefits__text">
-            Redukcja
-            <span class="es-benefits__span">70%</span> przebarwień<br>
-            po&nbsp;8 tygodniach<sup>1</sup>
-          </div>
-          <div class="progress-bar">
-            <div class="progress progress--2"></div>
-          </div>
-          <div class="es-benefits__text">
-            Widoczne rozświetlenie skóry<br>
-            po 3&nbsp;dniach<sup>1</sup>
-          </div>
-          <div class="progress-bar">
-            <div class="progress progress--3"></div>
-          </div>
-          <div class="es-benefits__text">
-            <span class="es-benefits__span">98%</span> zauważyło wyrównany<br>
-            koloryt skóry<sup>4</sup>
-          </div>
-        </div>
-        <div class="es-benefits__serum">
-          <img src="./images/serumdesktop.png" alt="" class="es-benefits__serumimg es-benefits__serumimg--desktop">
-          <img src="./images/serum.png" alt="" class="es-benefits__serumimg es-benefits__serumimg--mobile">
-        </div>
-      </div>
+
     </div>
+
     <div class="es-effects">
-      <h3 class="es-effects__text">
+      <p class="es-effects__text">
         Dlaczego warto stosować<br>
         <span class="es-effects__span">Serum Vitamin C?</span>
-      </h3>
+      </p>
       <div class="es-effects__container">
         <div class="es-effects__wrapper">
           <div class="es-effects__item">
@@ -140,7 +162,8 @@
 
     <div class="es-formula">
       <p class="es-formula__title">Składniki aktywne<br>
-        <span class="es-formula__span">w serum na przebarwienia</span></p>
+        <span class="es-formula__span">w serum na przebarwienia</span>
+      </p>
       <div class="es-formula__container">
         <div class="es-formula__wrapper">
           <img src="./images/ingr.png" alt="" class="es-formula__img">
@@ -314,20 +337,12 @@
           </div>
           <div class="swiper-button-prev es-swiper-button-prev">
             <div class="es-slider__arrow">
-              <img
-                src="./images/prev.png"
-                alt=""
-                class="es-slider__img"
-              >
+              <img src="./images/prev.png" alt="" class="es-slider__img">
             </div>
           </div>
           <div class="swiper-button-next es-swiper-button-next">
             <div class="es-slider__arrow">
-              <img
-                src="./images/next.png"
-                alt=""
-                class="es-slider__img"
-              >
+              <img src="./images/next.png" alt="" class="es-slider__img">
             </div>
           </div>
           <div class="swiper-pagination es-swiper-pagination"></div>
