@@ -438,13 +438,18 @@ $es-black: #000;
   }
 
   .es-formula {
-    background-color: #f4ec94;
-    background-image: radial-gradient(50% 50% at 50% 50%,
-        #fcfcf8 0%,
-        rgba(250, 248, 223, 0.506) 41.4%,
-        rgba(248, 244, 198, 0) 100%);
+
+    .es-section-title--highlight {
+      display: block;
+    }
+
 
     &__container {
+      background-color: #f4ec94;
+      background-image: radial-gradient(50% 50% at 50% 50%,
+          #fcfcf8 0%,
+          rgba(250, 248, 223, 0.506) 41.4%,
+          rgba(248, 244, 198, 0) 100%);
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -550,13 +555,6 @@ $es-black: #000;
     border-bottom: 2px solid $es-orange;
     display: block;
 
-    &__menu {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      cursor: pointer;
-    }
-
     &__title {
       color: $es-orange;
       font-weight: 700;
@@ -572,14 +570,7 @@ $es-black: #000;
       text-align: center;
     }
 
-    &__content {
-      padding: 20px 40px;
-      transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-
-      &--desktop {
-        display: none;
-      }
-    }
+    
 
     &__item {
       display: flex;
@@ -588,30 +579,44 @@ $es-black: #000;
       align-items: center;
     }
 
+    &__menu {
+      display: flex;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      background: $es-white;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+    }
+
     &__hide {
       padding: 0 10px;
       color: $es-orange;
     }
 
-    &--collapsed .es-ingr__content {
-      display: none;
+    &--collapsed {
+      max-height: 40px;
+      overflow: hidden;
+    }
+
+    &__content {
+      padding: 20px 40px;
+      max-height: 100%;
+      transition: max-height 0.5s ease-in-out;
     }
 
     &__up {
-      position: relative;
-      top: 15px;
       width: 20px;
       height: 20px;
       transform: rotate(180deg);
       transition: transform 0.3s ease-in-out;
+      margin: 0;
     }
 
-    &--collapsed,
-
-    &__up {
-      transform: rotate(0deg);
-    }
   }
+
 
   .es-htu {
     margin: 0;

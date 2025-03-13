@@ -359,11 +359,12 @@
   border-bottom: none;
   border-left: none;
 }
-#es-garnier.es-garnier .es-formula {
-  background-color: #f4ec94;
-  background-image: radial-gradient(50% 50% at 50% 50%, #fcfcf8 0%, rgba(250, 248, 223, 0.506) 41.4%, rgba(248, 244, 198, 0) 100%);
+#es-garnier.es-garnier .es-formula .es-section-title--highlight {
+  display: block;
 }
 #es-garnier.es-garnier .es-formula__container {
+  background-color: #f4ec94;
+  background-image: radial-gradient(50% 50% at 50% 50%, #fcfcf8 0%, rgba(250, 248, 223, 0.506) 41.4%, rgba(248, 244, 198, 0) 100%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -455,12 +456,6 @@
   border-bottom: 2px solid #e95817;
   display: block;
 }
-#es-garnier.es-garnier .es-ingr__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  cursor: pointer;
-}
 #es-garnier.es-garnier .es-ingr__title {
   color: #e95817;
   font-weight: 700;
@@ -474,36 +469,42 @@
   font-size: 16px;
   text-align: center;
 }
-#es-garnier.es-garnier .es-ingr__content {
-  padding: 20px 40px;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-#es-garnier.es-garnier .es-ingr__content--desktop {
-  display: none;
-}
 #es-garnier.es-garnier .es-ingr__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#es-garnier.es-garnier .es-ingr__menu {
+  display: flex;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 #es-garnier.es-garnier .es-ingr__hide {
   padding: 0 10px;
   color: #e95817;
 }
-#es-garnier.es-garnier .es-ingr--collapsed .es-ingr__content {
-  display: none;
+#es-garnier.es-garnier .es-ingr--collapsed {
+  max-height: 40px;
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-ingr__content {
+  padding: 20px 40px;
+  max-height: 100%;
+  transition: max-height 0.5s ease-in-out;
 }
 #es-garnier.es-garnier .es-ingr__up {
-  position: relative;
-  top: 15px;
   width: 20px;
   height: 20px;
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
-}
-#es-garnier.es-garnier .es-ingr--collapsed, #es-garnier.es-garnier .es-ingr__up {
-  transform: rotate(0deg);
+  margin: 0;
 }
 #es-garnier.es-garnier .es-htu {
   margin: 0;
