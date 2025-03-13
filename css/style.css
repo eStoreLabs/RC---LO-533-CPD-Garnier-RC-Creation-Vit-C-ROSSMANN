@@ -369,6 +369,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 20px;
 }
 #es-garnier.es-garnier .es-formula__wrapper {
   position: relative;
@@ -498,6 +499,9 @@
   padding: 20px 40px;
   max-height: 100%;
   transition: max-height 0.5s ease-in-out;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 #es-garnier.es-garnier .es-ingr__up {
   width: 20px;
