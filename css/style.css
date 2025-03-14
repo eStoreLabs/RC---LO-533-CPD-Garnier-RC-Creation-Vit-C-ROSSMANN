@@ -221,8 +221,7 @@
 }
 #es-garnier.es-garnier .es-benefits__serumWrapper {
   position: relative;
-  background: rgb(244, 236, 148);
-  background: linear-gradient(180deg, rgb(244, 236, 148) 0%, rgb(244, 236, 148) 50%, rgb(231, 232, 237) 50%, rgb(231, 232, 237) 100%);
+  background-color: #F4EC94;
 }
 #es-garnier.es-garnier .es-benefits__serumimg {
   margin: 0 auto;
@@ -234,10 +233,6 @@
 }
 #es-garnier.es-garnier .es-benefits__serumimg--mobile {
   display: block;
-}
-#es-garnier.es-garnier .es-benefits__serum {
-  background: rgb(244, 236, 148);
-  background: linear-gradient(180deg, rgb(244, 236, 148) 0%, rgb(244, 236, 148) 50%, rgb(231, 232, 237) 50%, rgb(231, 232, 237) 100%);
 }
 #es-garnier.es-garnier .es-benefits__arrow {
   position: absolute;
@@ -307,7 +302,7 @@
   display: none;
 }
 #es-garnier.es-garnier .es-effects__container {
-  background-color: #f4ec9b;
+  background-color: #F4EC94;
 }
 #es-garnier.es-garnier .es-effects__wrapper {
   padding-top: 20px;
@@ -363,13 +358,13 @@
   display: block;
 }
 #es-garnier.es-garnier .es-formula__container {
-  background-color: #f4ec94;
-  background-image: radial-gradient(50% 50% at 50% 50%, #fcfcf8 0%, rgba(250, 248, 223, 0.506) 41.4%, rgba(248, 244, 198, 0) 100%);
+  background-color: #F4EC94;
+  background: linear-gradient(140deg, #F4EC94 0%, #fbef40 100%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
+  padding-block: 32px;
 }
 #es-garnier.es-garnier .es-formula__wrapper {
   position: relative;
@@ -379,6 +374,8 @@
 }
 #es-garnier.es-garnier .es-formula__item {
   position: absolute;
+}
+#es-garnier.es-garnier .es-formula__item--title {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
@@ -425,23 +422,6 @@
   top: -50px;
   left: 86px;
 }
-#es-garnier.es-garnier .es-formula__title {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 52px 20px 40px;
-  text-align: center;
-  color: #000;
-  font-weight: 400;
-  font-size: 27px;
-}
-#es-garnier.es-garnier .es-formula__span {
-  color: #e95817;
-  font-weight: 700;
-}
 #es-garnier.es-garnier .es-formula__img {
   margin: 0 auto;
   display: block;
@@ -451,6 +431,9 @@
   padding-bottom: 50px;
   max-width: 70%;
   transition: all 0.3s;
+}
+#es-garnier.es-garnier .es-formula .es-desktop {
+  display: none;
 }
 #es-garnier.es-garnier .es-ingr {
   border-top: 2px solid #e95817;
@@ -841,7 +824,7 @@
     justify-content: flex-start;
     text-align: left;
   }
-  #es-garnier.es-garnier .es-formula__item {
+  #es-garnier.es-garnier .es-formula__item--title {
     font-size: 20px;
   }
   #es-garnier.es-garnier .es-formula__item--1 {
@@ -917,7 +900,7 @@
     display: none;
   }
   #es-garnier.es-garnier .es-benefits__container {
-    background: linear-gradient(140deg, rgb(239, 233, 166) 0%, rgb(255, 240, 4) 100%);
+    background: linear-gradient(140deg, #F4EC94 0%, #fbef40 100%);
   }
   #es-garnier.es-garnier .es-benefits__desktop {
     display: block;
@@ -1023,39 +1006,92 @@
   #es-garnier.es-garnier .es-formula__container {
     flex-wrap: nowrap;
   }
+  #es-garnier.es-garnier .es-formula .es-mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-formula .es-desktop {
+    display: block;
+  }
   #es-garnier.es-garnier .es-formula__item {
-    font-size: 14px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #es-garnier.es-garnier .es-formula__item--title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  #es-garnier.es-garnier .es-formula__item--text {
+    font-size: 22px;
+  }
+  #es-garnier.es-garnier .es-formula__item--line {
+    border: 3px solid #e95817;
   }
   #es-garnier.es-garnier .es-formula__item--1 {
-    left: 14%;
+    top: 23%;
+    left: 11%;
+    width: 40%;
+    max-width: 250px;
+  }
+  #es-garnier.es-garnier .es-formula__item--1 .es-formula__item--line {
+    height: 80px;
+    width: 60px;
+    margin-left: 50%;
+    border-right: none;
+    border-top: none;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 {
+    top: 41%;
+    left: 88%;
+    width: 40%;
+    max-width: 250px;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--title {
+    text-align: right;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--line {
+    height: 30px;
+    margin-right: 25%;
+    border-left: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-formula__item--3 {
-    top: 7%;
-    left: 65%;
+    top: 75%;
+    left: 14%;
+    width: 45%;
+    max-width: 270px;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--title {
+    text-align: left;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--line {
+    height: 30px;
+    width: 54%;
+    margin-left: 25%;
+    border-right: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-formula__item--4 {
-    top: 84%;
-    left: 12%;
+    top: 86%;
+    left: 87%;
+    width: 50%;
+    max-width: 250px;
   }
-  #es-garnier.es-garnier .es-formula__line--1 {
-    height: 175px;
-    top: 25px;
-    left: 15px;
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--title {
+    text-align: right;
   }
-  #es-garnier.es-garnier .es-formula__line--2 {
-    top: 40px;
-  }
-  #es-garnier.es-garnier .es-formula__line--4 {
-    width: 100px;
-    height: 60px;
-    top: -70px;
-    left: 46px;
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--line {
+    height: 30px;
+    margin-right: 30%;
+    border-left: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-ingr {
     display: none;
-  }
-  #es-garnier.es-garnier .es-ingr__content--desktop {
-    display: block;
   }
   #es-garnier.es-garnier .es-htu__wrapper {
     padding: 10% 20%;
@@ -1072,11 +1108,44 @@
     top: 55%;
     left: 58%;
   }
-  #es-garnier.es-garnier .es-formula__item--4 {
-    left: 18%;
+  #es-garnier.es-garnier .es-formula__container {
+    padding-block: 64px;
   }
-  #es-garnier.es-garnier .es-formula__line--1 {
-    height: 215px;
+  #es-garnier.es-garnier .es-formula__img {
+    margin-left: 35%;
+    padding: unset;
+    max-width: 50%;
+  }
+  #es-garnier.es-garnier .es-formula__item--title {
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-formula__item--1 {
+    left: 11%;
+    top: 12%;
+  }
+  #es-garnier.es-garnier .es-formula__item--1 .es-formula__item--line {
+    width: 200px;
+    height: 35px;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 {
+    top: 32%;
+    left: 97%;
+    width: 50%;
+    max-width: 270px;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 {
+    top: 77%;
+    left: 17%;
+    width: 70%;
+    max-width: 420px;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--line {
+    height: 35px;
+    width: 59%;
+  }
+  #es-garnier.es-garnier .es-formula__item--4 {
+    top: 85%;
+    left: 95%;
   }
 }
 @media screen and (min-width: 990px) {
