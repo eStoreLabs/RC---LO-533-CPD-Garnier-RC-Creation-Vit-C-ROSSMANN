@@ -2,15 +2,22 @@
 $es-montserrat: "Montserrat", sans-serif;
 $es-white: #ffffff;
 $es-yellow: #fbef40;
-$es-yellow-light: #F4EC94;
+$es-yellow-light: #f4ec94;
 $es-bgcolor: #f4fbfb;
 $es-orange: #e95817;
+$es-orange-dark: #7c2e0c;
 $es-black: #000;
 
 @mixin es-yellow-gradient {
   background: -moz-linear-gradient(140deg, $es-yellow-light 0%, $es-yellow 100%);
   background: -webkit-linear-gradient(140deg, $es-yellow-light 0%, $es-yellow 100%);
   background: linear-gradient(140deg, $es-yellow-light 0%, $es-yellow 100%);
+}
+
+@mixin es-orange-gradient {
+  background: -moz-linear-gradient(90deg, $es-orange 0%, $es-orange-dark 100%);
+  background: -webkit-linear-gradient(90deg, $es-orange 0%, $es-orange-dark 100%);
+  background: linear-gradient(90deg, $es-orange 0%, $es-orange-dark 100%);
 }
 
 @mixin text {
@@ -148,7 +155,7 @@ $es-black: #000;
 
   .es-benefits {
     position: relative;
-    z-index: 700;
+    z-index: 3;
     margin: 0;
     width: 100%;
     padding: 0;
@@ -175,8 +182,9 @@ $es-black: #000;
     }
 
     &__container {
-      background-color: #f4ec94;
+      background-color: $es-yellow-light;
       padding-top: 16px;
+      @include es-yellow-gradient();
     }
 
     &__wrapper {
@@ -212,10 +220,7 @@ $es-black: #000;
     }
 
     &__border {
-      position: relative;
       margin: 20px 5%;
-      // border: 2px solid #000000;
-      border-radius: 20px;
       padding: 15px 0;
     }
 
@@ -609,62 +614,51 @@ $es-black: #000;
 
   }
 
-
   .es-htu {
     margin: 0;
-    background-color: #f4ec94;
-
-    &__title {
-      margin-top: 0;
-      padding-top: 20px;
-      color: $es-orange;
-      font-weight: 700;
-      font-size: 27px;
-      text-align: center;
-
-      &--span {
-        color: #000000;
-        font-weight: 400;
-      }
-    }
 
     &__wrapper {
-      padding: 10%;
-      background-image: url("../images/woman-htu.png");
-      background-position: right;
-      background-size: contain;
-      background-repeat: no-repeat;
-      min-height: 320px;
+      @include es-yellow-gradient();
+    }
+
+    &__flex {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 32px;
     }
 
     &__item {
-      width: 40%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
     &__subitem {
       display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     &__number {
       color: $es-orange;
       font-weight: 700;
+      font-size: 20px;
     }
 
     &__line {
-      position: relative;
-      z-index: 400;
-      top: 4px;
-      left: 6px;
-      width: 80%;
-      background-image: url("../images/line.png");
-      background-position: 100%;
-      background-repeat: no-repeat;
-      background-size: contain;
-      min-height: 4px;
+      @include es-orange-gradient();
+      width: 100%;
+      height: 8px;
     }
 
     &__text {
       font-weight: 500;
+    }
+
+    &__desktop {
+      display: none;
     }
   }
 
@@ -789,7 +783,7 @@ $es-black: #000;
 
   .es-footer {
     width: 100%;
-    background-color: #f4ec94;
+    background-color: $es-yellow-light;
     padding: 20px 35px;
     font-weight: 500;
     font-size: 11px;
@@ -872,22 +866,6 @@ $es-black: #000;
       }
     }
 
-    .es-htu {
-      max-height: 300px;
-
-      &__wrapper {
-        background-image: none;
-      }
-
-      &__item {
-        min-width: 100%;
-      }
-
-      &__line {
-        width: 40%;
-      }
-    }
-
     .es-ingrcol {
       &__image {
         width: 266px;
@@ -962,6 +940,16 @@ $es-black: #000;
           width: 120px;
           height: 50px;
         }
+      }
+    }
+
+    .es-htu {
+      &__background {
+        background-image: none !important;
+      }
+
+      &__item {
+        width: 100%;
       }
     }
   }
@@ -1239,16 +1227,22 @@ $es-black: #000;
     }
 
     .es-formula {
-      &__container {
-        flex-wrap: nowrap;
-      }
-
       .es-mobile {
         display: none;
       }
 
       .es-desktop {
         display: block;
+      }
+
+      &__container {
+        padding-block: 64px;
+      }
+
+      &__img {
+        margin-left: 37%;
+        padding: unset;
+        max-width: 42%;
       }
 
       &__item {
@@ -1258,12 +1252,13 @@ $es-black: #000;
 
         &--title {
           text-align: left;
-          margin-bottom: 20px;
-          font-size: 24px;
+          margin-bottom: 10px;
+          font-size: 22px;
         }
 
         &--text {
-          font-size: 22px;
+          font-size: 18px;
+          margin-block: 10px;
         }
 
         &--line {
@@ -1271,14 +1266,14 @@ $es-black: #000;
         }
 
         &--1 {
-          top: 23%;
           left: 11%;
+          top: 12%;
           width: 40%;
           max-width: 250px;
 
           .es-formula__item--line {
-            height: 80px;
-            width: 60px;
+            width: 200px;
+            height: 35px;
             margin-left: 50%;
             border-right: none;
             border-top: none;
@@ -1286,10 +1281,10 @@ $es-black: #000;
         }
 
         &--2 {
-          top: 41%;
-          left: 88%;
-          width: 40%;
-          max-width: 250px;
+          top: 32%;
+          left: 85%;
+          width: 50%;
+          max-width: 270px;
 
           .es-formula__item--text,
           .es-formula__item--title {
@@ -1297,18 +1292,19 @@ $es-black: #000;
           }
 
           .es-formula__item--line {
+            width: 170px;
+            margin-left: 14%;
             height: 30px;
-            margin-right: 25%;
             border-left: none;
             border-bottom: none;
           }
         }
 
         &--3 {
-          top: 75%;
-          left: 14%;
-          width: 45%;
-          max-width: 270px;
+          top: 77%;
+          left: 26%;
+          width: 70%;
+          max-width: 400px;
 
           .es-formula__item--text,
           .es-formula__item--title {
@@ -1316,8 +1312,8 @@ $es-black: #000;
           }
 
           .es-formula__item--line {
-            height: 30px;
-            width: 54%;
+            height: 35px;
+            width: 59%;
             margin-left: 25%;
             border-right: none;
             border-bottom: none;
@@ -1325,8 +1321,8 @@ $es-black: #000;
         }
 
         &--4 {
-          top: 86%;
-          left: 87%;
+          top: 85%;
+          left: 85%;
           width: 50%;
           max-width: 250px;
 
@@ -1342,7 +1338,6 @@ $es-black: #000;
             border-bottom: none;
           }
         }
-
       }
     }
 
@@ -1351,8 +1346,55 @@ $es-black: #000;
     }
 
     .es-htu {
-      &__wrapper {
-        padding: 10% 20%;
+      &__desktop {
+        display: block;
+      }
+
+      &__pack {
+        margin-bottom: -10%;
+        width: 30%;
+        max-width: 200px;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          animation: pulse2 2s infinite;
+        }
+      }
+
+      &__background {
+        display: flex;
+        align-items: center;
+        padding: 32px;
+      }
+
+      &__flex {
+        width: 40%;
+      }
+      &__item {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        &:hover .es-htu__number {
+          transform: translateY(-10px);
+          animation: pulse 2s infinite;
+        }
+      }
+      &__line {
+        display: none;
+      }
+      &__number {
+        background-color: $es-orange;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: $es-white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      &__subitem {
+        flex-direction: column;
+      }
+      &__text {
+        text-align: center;
       }
     }
   }
@@ -1374,54 +1416,39 @@ $es-black: #000;
     }
 
     .es-formula {
-      &__container {
-        padding-block: 64px;
-      }
-
-      &__img {
-        margin-left: 35%;
-        padding: unset;
-        max-width: 50%;
-      }
-
       &__item {
-        &--title {
-          margin-bottom: 10px;
-        }
-
         &--1 {
-          left: 11%;
-          top: 12%;
-
-          .es-formula__item--line {
-            width: 200px;
-            height: 35px;
-          }
+          left: 13%;
+          top: 14%;
         }
 
         &--2 {
-          top: 32%;
-          left: 97%;
-          width: 50%;
-          max-width: 270px;
+          left: 96%;
+
+          .es-formula__item--line {
+            width: 200px;
+            margin-left: 0%;
+          }
         }
 
         &--3 {
-          top: 77%;
-          left: 17%;
-          width: 70%;
-          max-width: 420px;
+          left: 16%;
 
           .es-formula__item--line {
-            height: 35px;
-            width: 59%;
+            width: 66%;
           }
         }
 
         &--4 {
-          top: 85%;
-          left: 95%;
+          left: 93%;
         }
+      }
+    }
+
+    .es-htu {
+      &__background {
+        gap: 10%;
+        padding-inline: 64px;
       }
     }
   }
