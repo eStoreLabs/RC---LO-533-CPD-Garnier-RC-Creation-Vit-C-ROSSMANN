@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   // Dodanie logiki do zwijania/rozwijania sekcji
-  const hideButton = document.querySelector('.es-ingr__hide');
+  const hideButton = document.querySelector('.es-ingr__menu');
+  const hideText = document.querySelector('.es-ingr__hide');
   
   const toggleCollapse = () => {
     const ingrDiv = document.querySelector('.es-ingr');
@@ -32,10 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     ingrDiv.classList.toggle('es-ingr--collapsed'); 
 
     if (ingrDiv.classList.contains('es-ingr--collapsed')) {
-      hideButton.textContent = "ROZWIŃ";
+      hideText.textContent = "ROZWIŃ";
       upArrow.style.transform = 'rotate(180deg)'; // Strzałka skierowana w górę
     } else {
-      hideButton.textContent = "ZWIŃ";
+      hideText.textContent = "ZWIŃ";
       upArrow.style.transform = 'rotate(0deg)'; // Strzałka skierowana w górę
 
     }

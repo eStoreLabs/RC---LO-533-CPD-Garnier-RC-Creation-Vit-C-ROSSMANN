@@ -11,11 +11,40 @@
 #es-garnier.es-garnier * {
   box-sizing: border-box;
 }
-#es-garnier.es-garnier h2,
-#es-garnier.es-garnier h3,
-#es-garnier.es-garnier h4,
-#es-garnier.es-garnier h5 {
+#es-garnier.es-garnier p {
   font-family: "Montserrat", sans-serif;
+  margin-block: 0;
+}
+#es-garnier.es-garnier img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+#es-garnier.es-garnier a {
+  text-decoration: none;
+}
+#es-garnier.es-garnier ::-moz-selection {
+  background-color: #e95817;
+  color: #ffffff;
+}
+#es-garnier.es-garnier ::selection {
+  background-color: #e95817;
+  color: #ffffff;
+}
+#es-garnier.es-garnier .es-section-title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin-block: 32px;
+  line-height: 1.3;
+}
+#es-garnier.es-garnier .es-section-title--highlight {
+  color: #e95817;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-section-title {
+    font-size: 32px;
+  }
 }
 #es-garnier.es-garnier .es-kv {
   margin: 0;
@@ -60,7 +89,7 @@
 }
 #es-garnier.es-garnier .es-kv__packshot {
   position: absolute;
-  bottom: -20px;
+  bottom: 0px;
   right: 25%;
   width: 20%;
   animation: slideleft 2s ease forwards;
@@ -93,65 +122,66 @@
 }
 #es-garnier.es-garnier .es-benefits {
   position: relative;
-  z-index: 700;
+  z-index: 3;
   margin: 0;
   width: 100%;
+  padding: 0;
+}
+#es-garnier.es-garnier .es-benefits__desktop {
+  display: none;
+}
+#es-garnier.es-garnier .es-benefits .es-section-title {
+  font-size: 18px;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-benefits .es-section-title {
+    font-size: 24px;
+  }
+}
+#es-garnier.es-garnier .es-benefits .es-section-title--highlight {
+  display: block;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-benefits .es-section-title--highlight {
+    font-size: 32px;
+  }
+}
+#es-garnier.es-garnier .es-benefits__container {
   background-color: #f4ec94;
-  padding: 0;
-}
-#es-garnier.es-garnier .es-benefits__title {
-  margin: 0;
-  width: 100%;
-  font-weight: 700;
-  font-size: 32px;
-}
-#es-garnier.es-garnier .es-benefits__title--white {
-  margin: 0;
-  padding: 0;
-  background-color: #ea5818;
-  padding: 20px;
-  color: #ffffff;
-  text-align: center;
-}
-#es-garnier.es-garnier .es-benefits__title--orange {
-  margin: 30px 0 0 0;
-  color: #ea5818;
-  font-size: 23px;
-  text-align: center;
-}
-#es-garnier.es-garnier .es-benefits__title--thin {
-  margin: 0;
-  color: #000000;
-  font-weight: 400;
-  font-size: 23px;
-  text-align: center;
-}
-#es-garnier.es-garnier .es-benefits__title--span {
-  color: #ffffff;
-}
-#es-garnier.es-garnier .es-benefits__title--black {
-  color: #000000;
-  font-weight: 500;
+  padding-top: 16px;
+  background: linear-gradient(140deg, #f4ec94 0%, #fbef40 100%);
 }
 #es-garnier.es-garnier .es-benefits__wrapper {
-  margin: 0 auto;
-  width: 100%;
+  margin: auto;
+  width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  color: #ea5818;
+  color: #e95817;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  padding: 16px;
+}
+#es-garnier.es-garnier .es-benefits__title--orange {
+  color: #e95817;
+  font-size: 23px;
+  font-weight: 700;
+}
+#es-garnier.es-garnier .es-benefits__title--black {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
 }
 #es-garnier.es-garnier .es-benefits__boxes {
   margin: 20px auto;
   position: relative;
 }
 #es-garnier.es-garnier .es-benefits__border {
-  position: relative;
   margin: 20px 5%;
-  border: 2px solid #000000;
-  border-radius: 20px;
   padding: 15px 0;
 }
 #es-garnier.es-garnier .es-benefits__boxWrapper {
@@ -165,7 +195,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ea5818;
+  background-color: #e95817;
   padding: 10px;
   color: #ffffff;
   max-width: 340px;
@@ -178,7 +208,6 @@
   border-radius: 25px;
   display: flex;
   justify-content: center;
-  background-image: url("../images/ba2.png");
   background-size: 100%;
   background-repeat: repeat;
   max-width: 340px;
@@ -194,15 +223,6 @@
 #es-garnier.es-garnier .es-benefits__subbox--2 {
   text-transform: uppercase;
 }
-#es-garnier.es-garnier .es-benefits__img {
-  width: 32px;
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  transition: all 0.3s;
-}
 #es-garnier.es-garnier .es-benefits__photoimg {
   margin: 0 auto;
   display: block;
@@ -211,6 +231,7 @@
 }
 #es-garnier.es-garnier .es-benefits__serumWrapper {
   position: relative;
+  background-color: #f4ec94;
 }
 #es-garnier.es-garnier .es-benefits__serumimg {
   margin: 0 auto;
@@ -222,10 +243,6 @@
 }
 #es-garnier.es-garnier .es-benefits__serumimg--mobile {
   display: block;
-}
-#es-garnier.es-garnier .es-benefits__serum {
-  background: rgb(244, 236, 148);
-  background: linear-gradient(180deg, rgb(244, 236, 148) 0%, rgb(244, 236, 148) 50%, rgb(231, 232, 237) 50%, rgb(231, 232, 237) 100%);
 }
 #es-garnier.es-garnier .es-benefits__arrow {
   position: absolute;
@@ -246,7 +263,7 @@
   font-weight: 400;
 }
 #es-garnier.es-garnier .es-benefits__span {
-  color: #ea5818;
+  color: #e95817;
   font-weight: 600;
 }
 #es-garnier.es-garnier .es-benefits .progress-bar {
@@ -260,7 +277,7 @@
 }
 #es-garnier.es-garnier .es-benefits .progress {
   height: 100%;
-  background: linear-gradient(90deg, #ea5818 0%, rgba(234, 88, 24, 0.52) 100%);
+  background: linear-gradient(90deg, #e95817 0%, rgba(234, 88, 24, 0.52) 100%);
 }
 #es-garnier.es-garnier .es-benefits .progress--1 {
   margin-bottom: 15px;
@@ -283,20 +300,24 @@
   font-weight: 700;
 }
 #es-garnier.es-garnier .es-effects {
-  position: relative;
-  z-index: 800;
-  left: 0px;
-  margin-top: -40px;
-  width: 100%;
-  padding-top: 0;
   text-align: center;
-  background: linear-gradient(180deg, #e7e8ed 0%, #e9e8de 52.9%, #f4ec94 100%);
+}
+#es-garnier.es-garnier .es-effects .es-section-title {
+  margin-top: 0;
+}
+#es-garnier.es-garnier .es-effects .es-section-title--highlight {
+  display: block;
+}
+#es-garnier.es-garnier .es-effects__desktop-bg {
+  display: none;
+}
+#es-garnier.es-garnier .es-effects__container {
+  background-color: #f4ec94;
 }
 #es-garnier.es-garnier .es-effects__wrapper {
   padding-top: 20px;
 }
 #es-garnier.es-garnier .es-effects__item {
-  min-width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -325,7 +346,7 @@
   text-align: center;
 }
 #es-garnier.es-garnier .es-effects__span {
-  color: #ea5818;
+  color: #e95817;
   font-weight: 700;
 }
 #es-garnier.es-garnier .es-effects__img {
@@ -343,15 +364,17 @@
   border-bottom: none;
   border-left: none;
 }
-#es-garnier.es-garnier .es-formula {
-  background-color: #f4ec94;
-  background-image: radial-gradient(50% 50% at 50% 50%, #fcfcf8 0%, rgba(250, 248, 223, 0.506) 41.4%, rgba(248, 244, 198, 0) 100%);
+#es-garnier.es-garnier .es-formula .es-section-title--highlight {
+  display: block;
 }
 #es-garnier.es-garnier .es-formula__container {
+  background-color: #f4ec94;
+  background: linear-gradient(140deg, #f4ec94 0%, #fbef40 100%);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-block: 32px;
 }
 #es-garnier.es-garnier .es-formula__wrapper {
   position: relative;
@@ -361,10 +384,12 @@
 }
 #es-garnier.es-garnier .es-formula__item {
   position: absolute;
+}
+#es-garnier.es-garnier .es-formula__item--title {
   text-align: center;
   font-size: 14px;
   font-weight: 700;
-  color: #ea5818;
+  color: #e95817;
   text-transform: uppercase;
 }
 #es-garnier.es-garnier .es-formula__item--1 {
@@ -407,23 +432,6 @@
   top: -50px;
   left: 86px;
 }
-#es-garnier.es-garnier .es-formula__title {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 52px 20px 40px;
-  text-align: center;
-  color: #000;
-  font-weight: 400;
-  font-size: 27px;
-}
-#es-garnier.es-garnier .es-formula__span {
-  color: #ea5818;
-  font-weight: 700;
-}
 #es-garnier.es-garnier .es-formula__img {
   margin: 0 auto;
   display: block;
@@ -434,19 +442,16 @@
   max-width: 70%;
   transition: all 0.3s;
 }
+#es-garnier.es-garnier .es-formula .es-desktop {
+  display: none;
+}
 #es-garnier.es-garnier .es-ingr {
-  border-top: 2px solid #ea5818;
-  border-bottom: 2px solid #ea5818;
+  border-top: 2px solid #e95817;
+  border-bottom: 2px solid #e95817;
   display: block;
 }
-#es-garnier.es-garnier .es-ingr__menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  cursor: pointer;
-}
 #es-garnier.es-garnier .es-ingr__title {
-  color: #ea5818;
+  color: #e95817;
   font-weight: 700;
   font-size: 17px;
 }
@@ -458,111 +463,90 @@
   font-size: 16px;
   text-align: center;
 }
-#es-garnier.es-garnier .es-ingr__content {
-  padding: 20px 40px;
-  transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-}
-#es-garnier.es-garnier .es-ingr__content--desktop {
-  display: none;
-}
 #es-garnier.es-garnier .es-ingr__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#es-garnier.es-garnier .es-ingr__menu {
+  display: flex;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: #ffffff;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
 #es-garnier.es-garnier .es-ingr__hide {
   padding: 0 10px;
-  color: #ea5818;
+  color: #e95817;
 }
-#es-garnier.es-garnier .es-ingr--collapsed .es-ingr__content {
-  display: none;
+#es-garnier.es-garnier .es-ingr--collapsed {
+  max-height: 40px;
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-ingr__content {
+  padding: 20px 40px;
+  max-height: 100%;
+  transition: max-height 0.5s ease-in-out;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 #es-garnier.es-garnier .es-ingr__up {
-  position: relative;
-  top: 15px;
   width: 20px;
   height: 20px;
   transform: rotate(180deg);
   transition: transform 0.3s ease-in-out;
-}
-#es-garnier.es-garnier .es-ingr--collapsed, #es-garnier.es-garnier .es-ingr__up {
-  transform: rotate(0deg);
+  margin: 0;
 }
 #es-garnier.es-garnier .es-htu {
   margin: 0;
-  background-color: #f4ec94;
-}
-#es-garnier.es-garnier .es-htu__title {
-  margin-top: 0;
-  padding-top: 20px;
-  color: #ea5818;
-  font-weight: 700;
-  font-size: 27px;
-  text-align: center;
-}
-#es-garnier.es-garnier .es-htu__title--span {
-  color: #000000;
-  font-weight: 400;
 }
 #es-garnier.es-garnier .es-htu__wrapper {
-  padding: 10%;
-  background-image: url("../images/woman-htu.png");
-  background-position: right;
-  background-size: contain;
-  background-repeat: no-repeat;
-  min-height: 320px;
+  background: linear-gradient(140deg, #f4ec94 0%, #fbef40 100%);
+}
+#es-garnier.es-garnier .es-htu__flex {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
 }
 #es-garnier.es-garnier .es-htu__item {
-  width: 40%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 #es-garnier.es-garnier .es-htu__subitem {
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
 #es-garnier.es-garnier .es-htu__number {
-  color: #ea5818;
+  color: #e95817;
   font-weight: 700;
+  font-size: 20px;
 }
 #es-garnier.es-garnier .es-htu__line {
-  position: relative;
-  z-index: 400;
-  top: 4px;
-  left: 6px;
-  width: 80%;
-  background-image: url("../images/line.png");
-  background-position: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  min-height: 4px;
+  background: linear-gradient(90deg, #e95817 0%, #7c2e0c 100%);
+  width: 100%;
+  height: 8px;
 }
 #es-garnier.es-garnier .es-htu__text {
   font-weight: 500;
 }
+#es-garnier.es-garnier .es-htu__desktop {
+  display: none;
+}
 #es-garnier.es-garnier .es-slider {
   margin: 0;
   padding-bottom: 32px;
-  background: rgb(244, 236, 148);
-  background: linear-gradient(180deg, rgb(244, 236, 148) 0%, rgb(244, 236, 148) 63%, rgb(255, 255, 255) 73%, rgb(255, 255, 255) 100%);
-}
-#es-garnier.es-garnier .es-slider:hover .es-slider__ampm {
-  animation: pulse2 2s infinite;
-}
-#es-garnier.es-garnier .es-slider__title {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  padding: 52px 20px 40px;
-  text-align: center;
-  color: #000;
-  font-weight: 400;
-  font-size: 27px;
-}
-#es-garnier.es-garnier .es-slider__span {
-  color: #ea5818;
-  font-weight: 700;
+  position: relative;
+  z-index: 0;
 }
 #es-garnier.es-garnier .es-slider__name {
   width: 100%;
@@ -573,12 +557,19 @@
   line-height: inherit;
   padding: 20px 0;
   text-align: center;
-  color: #ea5818;
+  color: #e95817;
   font-weight: 700;
   font-size: 16px;
 }
 #es-garnier.es-garnier .es-slider__wrapper {
   padding: 0 16px;
+}
+#es-garnier.es-garnier .es-slider__bg {
+  background: linear-gradient(140deg, #f4ec94 0%, #fbef40 100%);
+  position: absolute;
+  width: 100%;
+  height: 46%;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-slider__content {
   max-width: 100%;
@@ -616,10 +607,11 @@
   text-decoration: none;
   text-transform: uppercase;
   transition: all 0.5s;
+  cursor: pointer;
+  border-radius: 10px;
 }
 #es-garnier.es-garnier .es-slider__button:hover {
   border: 1px solid #0e8144;
-  border-radius: 10px;
   color: #0e8144;
   background: #fff;
 }
@@ -645,20 +637,18 @@
   left: -1%;
 }
 #es-garnier.es-garnier .swiper-pagination-bullet-active {
-  background-color: #000;
+  background-color: #e95817;
 }
 #es-garnier.es-garnier .es-footer {
   width: 100%;
-  background-color: #f4ec94;
   padding: 20px 35px;
-  color: #000000;
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 11px;
   font-style: normal;
   text-align: center;
   line-height: 16px;
-  /* Black TXT */
+  max-width: 600px;
+  margin: auto;
 }
 #es-garnier.es-garnier .es-logo {
   margin: 0 auto;
@@ -720,23 +710,11 @@
   #es-garnier.es-garnier .es-ingr__text {
     width: 100%;
   }
-  #es-garnier.es-garnier .es-htu {
-    max-height: 300px;
-  }
-  #es-garnier.es-garnier .es-htu__wrapper {
-    background-image: none;
-  }
-  #es-garnier.es-garnier .es-htu__item {
-    min-width: 100%;
-  }
-  #es-garnier.es-garnier .es-htu__line {
-    width: 40%;
-  }
   #es-garnier.es-garnier .es-ingrcol__image {
     width: 266px;
   }
   #es-garnier.es-garnier .es-ingrcol__title {
-    color: #ea5818;
+    color: #e95817;
     font-weight: 500;
     font-size: 20px;
   }
@@ -795,6 +773,15 @@
     width: 120px;
     height: 50px;
   }
+  #es-garnier.es-garnier .es-htu__background {
+    background-image: none !important;
+  }
+  #es-garnier.es-garnier .es-htu__item {
+    width: 100%;
+  }
+  #es-garnier.es-garnier .es-footer span {
+    display: block;
+  }
 }
 @media screen and (min-width: 415px) {
   #es-garnier.es-garnier .es-benefits__border {
@@ -813,10 +800,17 @@
     padding: 5px 15px;
     font-size: 14px;
   }
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -50px;
+  #es-garnier.es-garnier .es-effects__wrapper {
+    max-width: 60%;
+    margin: auto;
   }
-  #es-garnier.es-garnier .es-formula__item {
+  #es-garnier.es-garnier .es-effects__item {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  #es-garnier.es-garnier .es-formula__item--title {
     font-size: 20px;
   }
   #es-garnier.es-garnier .es-formula__item--1 {
@@ -888,69 +882,295 @@
   #es-garnier.es-garnier .es-benefits__serumimg--mobile {
     display: none;
   }
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -68px;
+  #es-garnier.es-garnier .es-benefits__mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-benefits__container {
+    background: linear-gradient(140deg, #f4ec94 0%, #fbef40 100%);
+  }
+  #es-garnier.es-garnier .es-benefits__desktop {
+    display: block;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-title-wrapper {
+    background-color: #ffffff;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin: auto;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 55%;
+    width: -moz-max-content;
+    width: max-content;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 3px solid #ffffff;
+    z-index: 1;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-top {
+    background-color: rgba(196, 194, 72, 0.7490196078);
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-top--1 {
+    border: 3px solid #ffffff;
+    border-top: none;
+    border-left: none;
+    border-radius: 16px 0 16px 0;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    padding: 8px 16px;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-top--2 {
+    padding: 8px 16px;
+    border-bottom: 3px solid #ffffff;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-top--span {
+    font-size: 24px;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-arrow-container {
+    position: relative;
+    height: 100px;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-arrow {
+    position: absolute;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-BA-text-container {
+    display: flex;
+    padding: 8px 16px;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 100px;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-images-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-images--left {
+    flex: 1 1 0;
+    max-width: 50%;
+    z-index: 0;
+  }
+  #es-garnier.es-garnier .es-benefits__desktop-images--right {
+    flex: 1 1 0;
+    max-width: 30%;
+    z-index: 1;
   }
   #es-garnier.es-garnier .es-effects__container {
-    flex-wrap: nowrap;
+    position: relative;
+    z-index: 1;
+    aspect-ratio: 2.66;
+  }
+  #es-garnier.es-garnier .es-effects__wrapper {
+    margin-left: 8%;
+    max-width: 55%;
   }
   #es-garnier.es-garnier .es-effects__ba {
-    border-bottom: 7px solid #ea5818;
-    border-left: 7px solid #ea5818;
+    display: none;
+  }
+  #es-garnier.es-garnier .es-effects__desktop-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  #es-garnier.es-garnier .es-formula .es-mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-formula .es-desktop {
+    display: block;
   }
   #es-garnier.es-garnier .es-formula__container {
-    flex-wrap: nowrap;
+    padding-block: 64px;
+  }
+  #es-garnier.es-garnier .es-formula__img {
+    margin-left: 37%;
+    padding: unset;
+    max-width: 42%;
   }
   #es-garnier.es-garnier .es-formula__item {
-    font-size: 14px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+  #es-garnier.es-garnier .es-formula__item--title {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  #es-garnier.es-garnier .es-formula__item--text {
+    font-size: 18px;
+    margin-block: 10px;
+  }
+  #es-garnier.es-garnier .es-formula__item--line {
+    border: 3px solid #e95817;
   }
   #es-garnier.es-garnier .es-formula__item--1 {
-    left: 14%;
+    left: 11%;
+    top: 12%;
+    width: 40%;
+    max-width: 250px;
+  }
+  #es-garnier.es-garnier .es-formula__item--1 .es-formula__item--line {
+    width: 200px;
+    height: 35px;
+    margin-left: 50%;
+    border-right: none;
+    border-top: none;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 {
+    top: 32%;
+    left: 85%;
+    width: 50%;
+    max-width: 270px;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--title {
+    text-align: right;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--line {
+    width: 170px;
+    margin-left: 14%;
+    height: 30px;
+    border-left: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-formula__item--3 {
-    top: 7%;
-    left: 65%;
+    top: 77%;
+    left: 26%;
+    width: 70%;
+    max-width: 400px;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--title {
+    text-align: left;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--line {
+    height: 35px;
+    width: 59%;
+    margin-left: 25%;
+    border-right: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-formula__item--4 {
-    top: 84%;
-    left: 12%;
+    top: 85%;
+    left: 85%;
+    width: 50%;
+    max-width: 250px;
   }
-  #es-garnier.es-garnier .es-formula__line--1 {
-    height: 175px;
-    top: 25px;
-    left: 15px;
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--text,
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--title {
+    text-align: right;
   }
-  #es-garnier.es-garnier .es-formula__line--2 {
-    top: 40px;
-  }
-  #es-garnier.es-garnier .es-formula__line--4 {
-    width: 100px;
-    height: 60px;
-    top: -70px;
-    left: 46px;
+  #es-garnier.es-garnier .es-formula__item--4 .es-formula__item--line {
+    height: 30px;
+    margin-right: 30%;
+    border-left: none;
+    border-bottom: none;
   }
   #es-garnier.es-garnier .es-ingr {
     display: none;
   }
-  #es-garnier.es-garnier .es-ingr__content--desktop {
+  #es-garnier.es-garnier .es-htu__desktop {
     display: block;
   }
-  #es-garnier.es-garnier .es-htu__wrapper {
-    padding: 10% 20%;
+  #es-garnier.es-garnier .es-htu__pack {
+    margin-bottom: -10%;
+    width: 30%;
+    max-width: 200px;
+    transition: all 0.2s ease-in-out;
+  }
+  #es-garnier.es-garnier .es-htu__pack:hover {
+    animation: pulse2 2s infinite;
+  }
+  #es-garnier.es-garnier .es-htu__background {
+    display: flex;
+    align-items: center;
+    padding: 32px;
+  }
+  #es-garnier.es-garnier .es-htu__flex {
+    width: 40%;
+  }
+  #es-garnier.es-garnier .es-htu__item {
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+  }
+  #es-garnier.es-garnier .es-htu__item:hover .es-htu__number {
+    transform: translateY(-10px);
+    animation: pulse 2s infinite;
+  }
+  #es-garnier.es-garnier .es-htu__line {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-htu__number {
+    background-color: #e95817;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #es-garnier.es-garnier .es-htu__subitem {
+    flex-direction: column;
+  }
+  #es-garnier.es-garnier .es-htu__text {
+    text-align: center;
   }
 }
 @media screen and (min-width: 900px) {
-  #es-garnier.es-garnier .es-formula__item--4 {
-    left: 18%;
+  #es-garnier.es-garnier .es-benefits__desktop-title-wrapper {
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 24px;
   }
-  #es-garnier.es-garnier .es-formula__line--1 {
-    height: 215px;
+  #es-garnier.es-garnier .es-benefits__desktop-BA-wrapper {
+    top: 55%;
+    left: 58%;
+  }
+  #es-garnier.es-garnier .es-formula__item--1 {
+    left: 13%;
+    top: 14%;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 {
+    left: 96%;
+  }
+  #es-garnier.es-garnier .es-formula__item--2 .es-formula__item--line {
+    width: 200px;
+    margin-left: 0%;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 {
+    left: 16%;
+  }
+  #es-garnier.es-garnier .es-formula__item--3 .es-formula__item--line {
+    width: 66%;
+  }
+  #es-garnier.es-garnier .es-formula__item--4 {
+    left: 93%;
+  }
+  #es-garnier.es-garnier .es-htu__background {
+    gap: 10%;
+    padding-inline: 64px;
   }
 }
 @media screen and (min-width: 990px) {
-  #es-garnier.es-garnier .es-effects {
-    margin-top: -83px;
-  }
   #es-garnier.es-garnier .es-benefits__border {
     top: 18%;
   }
@@ -1031,6 +1251,4 @@
   to {
     width: 98%;
   }
-}
-
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL3N0eWxlLnNjc3MiLCJzdHlsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBc0JBO0VBQ0ksY0FBQTtFQUNBLFVBQUE7RUFDQSxxQ0F4Qk07RUF5Qk4sZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxnQkFBQTtFQUNBLGdCQUFBO0FDckJKO0FEdUJJO0VBQ0ksc0JBQUE7QUNyQlI7QUR1Qkk7Ozs7RUFLSSxxQ0F2Q0U7QUNpQlY7QUR5Qkk7RUFDRSxTQUFBO0VBQ0EsVUFBQTtFQUNBLGtCQUFBO0FDdkJOO0FEd0JNO0VBQ0Usa0JBQUE7RUFDQSxTQUFBO0VBQ0EsU0FBQTtFQXpDSixTQUFBO0VBQ0EsVUFBQTtFQUNBLG9CQUFBO0VBQ0Esb0JBQUE7RUFDQSxvQkFBQTtFQXVDSSx5QkFBQTtFQUNBLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7RUFDQSxVQUFBO0FDbEJSO0FEb0JNO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0FDbEJSO0FEb0JNO0VBaERGLGNBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQWdESSxXQUFBO0FDaEJSO0FEbUJNO0VBQ0Usa0JBQUE7RUFDQSxNQUFBO0VBQ0EsUUFBQTtFQUNBLFVBQUE7RUFDQSxxQ0FBQTtFQUNBLFVBQUE7QUNqQlI7QURtQk07RUFDRSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxVQUFBO0VBQ0EsVUFBQTtFQUNBLHFDQUFBO0VBQ0EsVUFBQTtBQ2pCUjtBRGtCUTtFQXBFSixjQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7QUNxREo7QURrQk07RUFDRSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0VBQ0EsVUFBQTtFQUNBLDZCQUFBO0VBQ0EsVUFBQTtBQ2hCUjtBRGlCUTtFQWhGSixjQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFnRk0sY0FBQTtBQ2JWO0FEZ0JNO0VBQ0UsZUFBQTtFQUNBLGNBQUE7RUFDQSxrQkFB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 */
+}/*# sourceMappingURL=style.css.map */
