@@ -916,7 +916,7 @@
     z-index: 1;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-top {
-    background-color: rgba(196, 194, 72, 0.7490196078);
+    color: #000;
   }
   #es-garnier.es-garnier .es-benefits__desktop-BA-top--1 {
     border: 3px solid #ffffff;
@@ -1090,7 +1090,7 @@
     display: block;
   }
   #es-garnier.es-garnier .es-htu__pack {
-    margin-bottom: -10%;
+    margin-bottom: -7%;
     width: 30%;
     max-width: 200px;
     transition: all 0.2s ease-in-out;

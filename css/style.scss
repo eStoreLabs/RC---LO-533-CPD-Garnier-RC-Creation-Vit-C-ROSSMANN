@@ -1140,7 +1140,7 @@ $es-black: #000;
         }
 
         &-BA-top {
-          background-color: #c4c248bf;
+          color: $es-black;
 
           &--1 {
             border: 3px solid $es-white;
@@ -1357,7 +1357,7 @@ $es-black: #000;
       }
 
       &__pack {
-        margin-bottom: -10%;
+        margin-bottom: -7%;
         width: 30%;
         max-width: 200px;
         transition: all 0.2s ease-in-out;
