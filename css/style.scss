@@ -41,7 +41,7 @@ $es-black: #000;
   font-weight: 300;
   font-size: 16px;
   line-height: 1.2;
-  max-width: 990px;
+  max-width: 1300px;
   overflow: hidden;
 
   * {
@@ -126,7 +126,7 @@ $es-black: #000;
 
     &__packshot {
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
       right: 25%;
       width: 20%;
       animation: slideleft 2s ease forwards;
@@ -585,7 +585,6 @@ $es-black: #000;
     &__menu {
       display: flex;
       height: 40px;
-      display: flex;
       align-items: center;
       justify-content: flex-end;
       background: $es-white;
@@ -728,7 +727,6 @@ $es-black: #000;
       width: 180px;
       margin: 0 auto;
       border: 1px solid #0e8144;
-      border-radius: 0;
       display: block;
       padding: 12px 3px;
       color: #fff;
@@ -1440,7 +1438,7 @@ $es-black: #000;
 
           .es-formula__item--line {
             width: 200px;
-            margin-left: 0%;
+            margin-left: 0;
           }
         }
 
